@@ -30,7 +30,12 @@ These are the commands that were used to create the initial scaffolded projects.
 \trucktrackrepo\trucktrack> cd ui
 # move into project folder
 
-\trucktrackrepo\trucktrack> dotnet add package
+\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore --version 5.0.13
+\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.13
+\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.13
+\trucktrackrepo\trucktrack> dotnet build
+# last command checks to see if the whole project builds - should get "Build Succeeded" message
+
 
 
 
