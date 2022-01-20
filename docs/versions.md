@@ -4,3 +4,4 @@
 
 [Microsoft.EntityFrameworkCore v 5.0.13](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/5.0.13)
 [Microsoft.EntityFrameworkCore.SqlServer 5.0.13](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/5.0.13)
+[Microsoft.EntityFrameworkCore.Design 5.0.13](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/5.0.13)
