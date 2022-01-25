@@ -1,2 +1,2 @@
 # Noah Vu 
-## Project 3 *complete* :+1;
+## Project 3 *complete* :+1:
