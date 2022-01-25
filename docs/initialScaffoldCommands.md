@@ -46,6 +46,16 @@ These are the commands that were used to create the initial scaffolded projects.
 \trucktrackrepo\trucktrack\dal> dotnet build
 # adds the packages to the dal project and checks for build
 
+\trucktrackrepo\trucktrack> cd ..
+# back out to the solution level
+
+\trucktrackrepo\trucktrack> dotnet sln .\trucktrack.sln add .\dal\dal.csproj
+# add the dal project to the solution
+
+\\trucktrackrepo\trucktrack> cd ui
+# move into the ui project directory
+\trucktrackrepo\trucktrack>
+# add a refernce to the dal project to the ui project
 
 
 ```
