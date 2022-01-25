@@ -39,6 +39,12 @@ These are the commands that were used to create the initial scaffolded projects.
 \trucktrackrepo\trucktrack> dotnet new classlib -o dal -f net5.0
 # new class library project for the data access layer
 
+\trucktrackrepo\trucktrack> cd dal
+\trucktrackrepo\trucktrack\dal> dotnet add package Microsoft.EntityFrameworkCore --version 5.0.13
+\trucktrackrepo\trucktrack\dal> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.13
+\trucktrackrepo\trucktrack\dal> dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.13
+\trucktrackrepo\trucktrack\dal> dotnet build
+# adds the packages to the dal project and checks for build
 
 
 
