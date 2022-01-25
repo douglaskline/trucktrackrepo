@@ -36,6 +36,9 @@ These are the commands that were used to create the initial scaffolded projects.
 \trucktrackrepo\trucktrack> dotnet build
 # last command checks to see if the whole project builds - should get "Build Succeeded" message
 
+\trucktrackrepo\trucktrack> dotnet new classlib -o dal -f net5.0
+# new class library project for the data access layer
+
 
 
 
