@@ -1,3 +1,11 @@
+using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+
+namespace dal 
+{
+
+
 public class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
 {
    public void Configure(EntityTypeBuilder<User> builder)
@@ -22,4 +30,5 @@ public class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
          .Property(u=>u.email)
          .IsRequired();
    }
+}
 }
