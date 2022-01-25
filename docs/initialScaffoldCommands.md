@@ -70,5 +70,23 @@ These are the commands that were used to create the initial scaffolded projects.
 # move into the ui project
 
 \\trucktrackrepo\trucktrack\ui> dotnet run
+# this should show the local urls to access the basic ui project
+# terminal output looks like this:
+
+Building...
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\doug\OneDrive - UNC-Wilmington\Spr2022\githubcode\trucktrackrepo\trucktrack\ui
+
+# and accessing the url http://localhost:5000 with a browser shows this:
 
 ```
+
+![Initial Scaffolded Webapp](./media/InitialTruckTrackWebApp.PNG)
