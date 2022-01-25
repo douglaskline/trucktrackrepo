@@ -30,11 +30,14 @@ These are the commands that were used to create the initial scaffolded projects.
 \trucktrackrepo\trucktrack> cd ui
 # move into project folder
 
-\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore --version 5.0.13
-\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.13
-\trucktrackrepo\trucktrack> dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.13
-\trucktrackrepo\trucktrack> dotnet build
+\trucktrackrepo\trucktrack\ui> dotnet add package Microsoft.EntityFrameworkCore --version 5.0.13
+\trucktrackrepo\trucktrack\ui> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.13
+\trucktrackrepo\trucktrack\ui> dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.13
+\trucktrackrepo\trucktrack\ui> dotnet build
 # last command checks to see if the whole project builds - should get "Build Succeeded" message
+
+\trucktrackrepo\trucktrack\ui> cd ..
+# move back to the solution level
 
 \trucktrackrepo\trucktrack> dotnet new classlib -o dal -f net5.0
 # new class library project for the data access layer
@@ -62,4 +65,10 @@ These are the commands that were used to create the initial scaffolded projects.
 \\trucktrackrepo\trucktrack> dotnet build
 # make sure it all compiles
 # we should see build results for both the ui and dal projects
+
+\\trucktrackrepo\trucktrack> cd ui
+# move into the ui project
+
+\\trucktrackrepo\trucktrack\ui> dotnet run
+
 ```
