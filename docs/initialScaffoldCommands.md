@@ -20,7 +20,7 @@ These are the commands that were used to create the initial scaffolded projects.
 ## Setup the webapp project
 
 ``` shell
-\trucktrackrepo\trucktrack> dotnet new webapp -o ui -f net5.0 
+\trucktrackrepo\trucktrack> dotnet new mvc -o ui -f net5.0 
 # creates a new folder called ui
 # creates a file in the folder called ui/csproj
 
