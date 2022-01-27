@@ -23,3 +23,7 @@ Days of the Week:
 Issue Reference:
 Github Issue 
  Closes #26
+ 
+ 
+ Member Reference @douglaskline
+  :sunglasses: 👍
