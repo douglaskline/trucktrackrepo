@@ -10,3 +10,7 @@ Robert Rieger
 Languages Spoken
 * English
 * Spanish
+
+Hobbies
+1. Billiards
+2. Sim Racing
