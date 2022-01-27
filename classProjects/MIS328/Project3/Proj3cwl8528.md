@@ -27,4 +27,4 @@ Github Issue
  
  Member Reference @douglaskline
  
-  :sunglasses: :thumbsup:
+  :sunglasses:  :thumbsup:
