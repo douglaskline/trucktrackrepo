@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using dal;
+
 
 namespace ui
 {
@@ -23,6 +26,9 @@ namespace ui
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<dal.trucktrackContext>
+            (options=> options.UseSqlServer(Configuration.GetConnectionString("trucktrackConnection")));
+
             services.AddControllersWithViews();
         }
 
