@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>ee511090-435d-43b1-90f7-26936c35ea1e</UserSecretsId>
+    <UserSecretsId>trucktrack</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
