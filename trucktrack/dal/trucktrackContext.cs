@@ -20,6 +20,7 @@ namespace dal
       {
          modelBuilder.ApplyConfiguration(new UserEntityTypeConfiguration());
          
+         
       }
    }
 }

@@ -1,13 +1,15 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 
 namespace dal
 {
 
-   public class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
+   public  class UserEntityTypeConfiguration : IEntityTypeConfiguration<dal.user>
    {
-      public void Configure(EntityTypeBuilder<User> builder)
+      public void Configure(EntityTypeBuilder<dal.user> builder)
       {
          builder
             .Property(u => u.Id)
@@ -22,7 +24,7 @@ namespace dal
             .IsRequired();
 
          builder
-            .Property(u => u.userName)
+            .Property(u => u.username)
             .IsRequired();
 
          builder

@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace dal
 {
-   public partial class User
+   public class user
    {
       public int Id { get; set; }
       public string firstName { get; set; }
