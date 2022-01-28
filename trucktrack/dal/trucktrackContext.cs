@@ -18,7 +18,8 @@ namespace dal
 
       protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
-         new UserEntityTypeConfiguration().Configure(modelBuilder.Entity<User>());
+         modelBuilder.ApplyConfiguration(new UserEntityTypeConfiguration());
+         
       }
    }
 }
