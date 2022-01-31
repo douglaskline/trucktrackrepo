@@ -10,6 +10,8 @@ namespace dal
 
       public trucktrackContext(DbContextOptions<trucktrackContext> options) : base(options) { }
 
+      public virtual DbSet<user> user { get; set; }
+
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
          if (!optionsBuilder.IsConfigured)
