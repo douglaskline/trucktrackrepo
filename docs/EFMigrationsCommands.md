@@ -28,5 +28,19 @@ EOF
 % cd dal
 # make sure you are in the dal project folder
 
-dotnet ef migrations add InitialMigration -c trucktrackContext -s ../ui/ui.csproj
+dotnet ef migrations add InitialMigration -c trucktrackContext -s ../ui/ui.csproj -- connectionstring
+
 ```
+
+The command above should create some files under the /trucktrack/dal/Migrations folder.
+
+## Create a sql script from the migration
+
+```shell
+% cd Migrations
+# make sure you are in the /trucktrack/dal/Migrations folder
+
+dotnet ef migrations script 0  InitialMigration -o dbmigration.sql -- connectionstring
+```
+
+
