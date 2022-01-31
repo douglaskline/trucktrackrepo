@@ -15,10 +15,18 @@ dotnet tool install --global dotnet-ef
 
 ```
 
-On my mac, I had to also run this to add it to my path variable:
+On my mac, I had to also run this to add the tools to my path variable:
 ```shell
 cat << \EOF >> ~/.zprofile
 # Add .NET Core SDK tools
 export PATH="$PATH:/Users/dougkline/.dotnet/tools"
 EOF
+```
+
+## Create a migration
+```shell
+% cd dal
+# make sure you are in the dal project folder
+
+dotnet ef migrations add InitialMigration -c trucktrackContext -s ../ui/ui.csproj
 ```
