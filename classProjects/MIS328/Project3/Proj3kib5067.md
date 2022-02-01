@@ -1,3 +1,3 @@
 # Kishawna Bell
-## Title 
+## Title
 ## Project 3 *complete* :+1:
