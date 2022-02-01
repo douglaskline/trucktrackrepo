@@ -7,4 +7,10 @@ Favorite Foods:
 * Pizza
 * Sushi
 * Pad Thai
+
+Favorite Jordans:
+1. Jordan 1
+2. Jordan 4
+3. Jordan 3
+4. Jordan 11
 ## Project 3 *complete* :+1:
