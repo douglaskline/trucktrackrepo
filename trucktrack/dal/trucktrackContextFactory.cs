@@ -9,7 +9,6 @@ namespace dal
     public class truckTrackContextFactory
     : IDesignTimeDbContextFactory<trucktrackContext>
     {
-       // private const string ConnectionString= "Server=tcp:uncwkline.database.windows.net,1433;Initial Catalog=trucktrackdb;Persist Security Info=False;User ID=trucktrackwebapp;Password=24KrgIft3P83kSkQlT7yBAUL2OB;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         
 
         public truckTrackContextFactory(){
