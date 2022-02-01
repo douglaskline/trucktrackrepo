@@ -17,3 +17,5 @@ Things I dont like (ranked)
 
 This file is addressing
 #81
+
+The instructor for MIS 328 is @douglaskline
