@@ -8,6 +8,7 @@
 * MIS 328
 * CIT 425
 
-
-
+1. Graduate
+2. Job
+3. Have fun
 
