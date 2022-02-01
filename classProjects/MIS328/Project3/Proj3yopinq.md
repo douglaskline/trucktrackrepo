@@ -15,4 +15,7 @@ Favorite Jordans:
 4. Jordan 11
 
 This is a reference to issue #84
+
+The instructor of this course is @douglaskline
+
 ## Project 3 *complete* :+1:
