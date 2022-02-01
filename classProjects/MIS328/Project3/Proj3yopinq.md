@@ -18,4 +18,6 @@ This is a reference to issue #84
 
 The instructor of this course is @douglaskline
 
+:boom: :alien:
+
 ## Project 3 *complete* :+1:
