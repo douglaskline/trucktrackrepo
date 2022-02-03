@@ -13,4 +13,3 @@ Here is a link to [LinkedIn](https://www.linkedin.com/in/noah-vu-244050150/)
 @douglaskline
 
 :smile: :v:
-
