@@ -18,3 +18,8 @@ Days of the Week:
 5. Friday
 6. Saturday 
 7. Sunday
+
+Issue Reference:
+Github Issue 
+ Closes #26
+ 
