@@ -6,3 +6,8 @@ Things I like
 * Good vibes
 * Chill People
 * Cool Stuff
+
+Things I dont like
+1. Unchill people
+2. Bad vibes
+3. Weird Stuff
