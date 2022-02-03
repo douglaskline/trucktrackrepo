@@ -13,3 +13,5 @@ Things I dont like
 3. Weird Stuff
 
 this closes issue #106
+
+@douglaskline is the instructor of this course
