@@ -15,3 +15,5 @@ Things I dont like
 this closes issue #106
 
 @douglaskline is the instructor of this course
+
+:smiley: :sweat_smile:
