@@ -24,4 +24,6 @@ Github Issue
  Closes #26
  
   Member Reference @douglaskline
+
+    :sunglasses:  :thumbsup:
  
