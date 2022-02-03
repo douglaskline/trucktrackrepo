@@ -11,3 +11,5 @@ Things I dont like
 1. Unchill people
 2. Bad vibes
 3. Weird Stuff
+
+this closes issue #106
