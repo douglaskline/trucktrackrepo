@@ -11,6 +11,7 @@ namespace dal
       public trucktrackContext(DbContextOptions<trucktrackContext> options) : base(options) { }
 
       public virtual DbSet<user> user { get; set; }
+      public virtual DbSet<dal.report> reports {get; set;}
 
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
