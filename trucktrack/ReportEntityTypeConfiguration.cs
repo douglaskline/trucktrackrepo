@@ -11,6 +11,26 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.report> builder)
       {
+         builder
+            .Property(r=> r.reportTime)
+            .IsRequired();
+         
+         builder
+            .Property(r=> r.Id)
+            .IsRequired();
+
+         builder
+            .Property(r=> r.userId)
+            .IsRequired();
+
+          builder
+            .Property(r=> r.truckId)
+            .IsRequired();  
+
+         builder
+            .Property(r=> r.locationId)
+            .IsRequired();
+
          /*
          builder
             .Property(u => u.Id)
