@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace dal
 {
@@ -14,6 +15,7 @@ namespace dal
 
       public DateTime startTime {get;set;}
       public DateTime endTime {get;set;}
+      
       public int userId {get; set;}
       public dal.user user {get; set;}
    }
