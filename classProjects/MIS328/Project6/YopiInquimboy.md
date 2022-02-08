@@ -7,3 +7,8 @@ Big 3 Anime:
 * One Piece
 * Naruto
 * Bleach
+
+Sneaker Brands (ranked):
+1. Nike
+2. Jordan
+3. Adidas
