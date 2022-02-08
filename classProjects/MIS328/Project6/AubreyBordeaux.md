@@ -2,7 +2,7 @@
 ===
 ## Student
 
-[Linkedin](https://www.linkedin.com/in/aubrey-bordeaux-1444a41a2/)
+[Linked-In](https://www.linkedin.com/in/aubrey-bordeaux-1444a41a2/)
 
 * MIS 328
 * CIT 425
@@ -15,3 +15,5 @@
 3. Work
 
 #109 
+
+@
