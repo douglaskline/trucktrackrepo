@@ -12,6 +12,9 @@ namespace dal
       public void Configure(EntityTypeBuilder<dal.report> builder)
       {
          builder
+            .HasForeignKey<dal.user> (r=>r.userId);
+
+         builder
             .Property(r=> r.reportTime)
             .IsRequired();
          
