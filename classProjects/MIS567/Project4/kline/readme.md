@@ -80,3 +80,13 @@ I don't think there's anything to be done in this section: Use SQLite for develo
 
 Initial Migration
 -----------------
+did the commands
+ran without problems
+
+Part 5 Work with a Database
+---------------------------
+For me to get this to work, I had to make a couple of changes.
+In Program.cs, I changed the statement at the top `using MvcMovie.Data;` to `using MvcMovie;`
+In SeedData.cs, I changed the statement at the top `using MvcMovie.Data;` to `using MvcMovie;`
+
+I think this is because the `MvcMovieContext.cs` code doesn't declare a namespace.
