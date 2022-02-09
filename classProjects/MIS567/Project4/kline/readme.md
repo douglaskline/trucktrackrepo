@@ -104,3 +104,25 @@ this worked fine
 Part 8, add a new field to an ASP.NET Core MVC app
 --------------------------------------------------
 
+I see there is no code for the modification for the delete view.
+Here's what I added.
+```html
+        <dt class = "col-sm-10">
+            @Html.DisplayNameFor(model=>model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+```
+
+Same with the create view
+```html
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+```
+
+I was doing a build after each change to make sure I didn't have a build error.
+
