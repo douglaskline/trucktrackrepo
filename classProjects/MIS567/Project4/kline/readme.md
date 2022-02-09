@@ -90,3 +90,9 @@ In Program.cs, I changed the statement at the top `using MvcMovie.Data;` to `usi
 In SeedData.cs, I changed the statement at the top `using MvcMovie.Data;` to `using MvcMovie;`
 
 I think this is because the `MvcMovieContext.cs` code doesn't declare a namespace.
+
+Part 6, controller methods and views in ASP.NET Core
+----------------------------------------------------
+
+this worked fine
+
