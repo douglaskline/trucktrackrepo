@@ -8,10 +8,10 @@ namespace MvcMovie.Controllers
         // 
         // GET: /HelloWorld/
 
-        public string Index()
-        {
-            return "This is my default action...";
-        }
+public IActionResult Index()
+{
+    return View();
+}
 
         // GET: /HelloWorld/Welcome/ 
 // Requires using System.Text.Encodings.Web;
