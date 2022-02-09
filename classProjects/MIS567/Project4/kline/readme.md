@@ -96,3 +96,8 @@ Part 6, controller methods and views in ASP.NET Core
 
 this worked fine
 
+Part 7, add search to an ASP.NET Core MVC app
+---------------------------------------------
+
+
+
