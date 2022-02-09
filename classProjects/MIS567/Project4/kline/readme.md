@@ -132,4 +132,19 @@ It looks like you have to follow the link to reset all the migrations and start 
 https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli#resetting-all-migrations
 
 Basically, you just have to delete the migrations folder, and delete the .db file.
+Then go back to create a new migration like here:
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli#resetting-all-migrations
+
+Part 9, add validation to an ASP.NET Core MVC app
+-------------------------------------------------
+
+all works as expected
+
+
+Part 10, examine the Details and Delete methods of an ASP.NET Core app
+----------------------------------------------------------------------
+
+just points out some hacker prevention details
+
+
 
