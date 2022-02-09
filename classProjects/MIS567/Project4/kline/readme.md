@@ -126,3 +126,5 @@ Same with the create view
 
 I was doing a build after each change to make sure I didn't have a build error.
 
+Ah, I just saw the "Update the other templates". That means to fix all the views for movies: create, delete, details, edit, index.
+
