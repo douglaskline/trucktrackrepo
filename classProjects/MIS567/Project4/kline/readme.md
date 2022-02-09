@@ -72,3 +72,11 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.14
 
 Something interesting I found from the above commands. Packages that don't match the target framework don't get installed in the project. So if I don't specify the --version, then the package doesn't get added to MvdMovie.csproj
 
+Scaffold Movie Pages
+--------------------
+I was able to run the dotnet-aspnet-codegenerator command without doing the export command. But I've set this machine up previously. I think you will need to do the export command to add the tools to your path.
+
+I don't think there's anything to be done in this section: Use SQLite for development, SQL Server for production
+
+Initial Migration
+-----------------
