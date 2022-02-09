@@ -128,3 +128,8 @@ I was doing a build after each change to make sure I didn't have a build error.
 
 Ah, I just saw the "Update the other templates". That means to fix all the views for movies: create, delete, details, edit, index.
 
+It looks like you have to follow the link to reset all the migrations and start over:
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli#resetting-all-migrations
+
+Basically, you just have to delete the migrations folder, and delete the .db file.
+
