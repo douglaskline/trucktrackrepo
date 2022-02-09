@@ -24,3 +24,51 @@ Add a View
 
 almost missed this step: Create a Welcome view template named Views/HelloWorld/Welcome.cshtml.
 
+Add a Model
+-----------
+
+Now for this part:
+```shell
+dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+
+On my macbook, I ran this statement to see what global tools I had installed:
+```shell
+dougkline@Douglass-MacBook-Pro MvcMovie % dotnet tool list -g
+Package Id                       Version      Commands                   
+-------------------------------------------------------------------------
+dotnet-aspnet-codegenerator      5.0.2        dotnet-aspnet-codegenerator
+dotnet-ef                        6.0.1        dotnet-ef 
+```
+
+I also looked in my MvcMovie.csproj file, which showed that my target framework was 5.0:
+```shell
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
+
+Knowing that, here are the commands I ran:
+```shell
+dotnet tool install --global dotnet-ef --version 5.0.14
+# this gave me a message that it was already installed, which is a little weird (the list above says 6.0)
+# I did not run the dotnet-aspnet-codegenerator, since it was already listed as installed
+# note that tools are not part of our source - they are just used to perhaps create source code
+
+dotnet list package #will show the packages installed for this project
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.14
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.14
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.14
+```
+
+Something interesting I found from the above commands. Packages that don't match the target framework don't get installed in the project. So if I don't specify the --version, then the package doesn't get added to MvdMovie.csproj
+
