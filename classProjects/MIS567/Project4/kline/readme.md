@@ -21,3 +21,6 @@ The last few paragraphs of Add a Controller didn't initially make sense to me. I
 
 Add a View
 ----------
+
+almost missed this step: Create a Welcome view template named Views/HelloWorld/Welcome.cshtml.
+
