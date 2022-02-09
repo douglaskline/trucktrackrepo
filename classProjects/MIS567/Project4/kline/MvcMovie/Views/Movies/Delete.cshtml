@@ -35,6 +35,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Price)
         </dd>
+        <dt class = "col-sm-10">
+            @Html.DisplayNameFor(model=>model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
     </dl>
     
     <form asp-action="Delete">
