@@ -21,7 +21,7 @@ namespace dal
       protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
          modelBuilder.ApplyConfiguration(new UserEntityTypeConfiguration());
-         
+         modelBuilder.ApplyConfiguration(new TruckEntityTypeConfiguration()) ;
          
       }
    }
