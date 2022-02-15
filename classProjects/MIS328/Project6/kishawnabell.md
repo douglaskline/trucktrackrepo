@@ -11,4 +11,8 @@ Favorite Seasons
 * Fall 
 * Spring
 
+Favorite Colors 
+1. Pink
+2. Orange
+3. Red 
 
