@@ -36,6 +36,9 @@ namespace dal
         
         builder
             .Property(l => l.locationDescription);
+
+         builder.Property(l => l.timeStamp).IsRowVersion();
+
       }
    }
 }

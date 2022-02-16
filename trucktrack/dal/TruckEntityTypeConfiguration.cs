@@ -43,6 +43,9 @@ namespace dal
          builder
             .Property(t => t.truckURL);
 
+         builder.Property(t => t.timeStamp).IsRowVersion();
+
+
       }
    }
 }

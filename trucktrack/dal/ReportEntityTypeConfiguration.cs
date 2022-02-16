@@ -49,6 +49,9 @@ namespace dal
 
          
             */
+
+         builder.Property(r => r.timeStamp).IsRowVersion();
+
       }
    }
 }
