@@ -14,6 +14,8 @@ namespace dal
       public string tagLine { get; set; }
 
       public string truckURL { get; set; }
+            public byte[] timeStamp {get; set;}
+
 
    }
 }
