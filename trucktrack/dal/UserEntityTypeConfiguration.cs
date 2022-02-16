@@ -11,6 +11,8 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.user> builder)
       {
+         builder.ToTable("user");
+         
          builder
             .Property(u => u.Id)
             .HasColumnName("Id")
