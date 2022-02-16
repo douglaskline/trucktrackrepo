@@ -23,8 +23,8 @@ namespace dal
       {
          modelBuilder.ApplyConfiguration(new UserEntityTypeConfiguration());
          modelBuilder.ApplyConfiguration(new ReportEntityTypeConfiguration());
-         
-         
+         modelBuilder.ApplyConfiguration(new LocationEntityTypeConfiguration());
+         modelBuilder.ApplyConfiguration(new TruckEntityTypeConfiguration()) ;  
       }
    }
 }
