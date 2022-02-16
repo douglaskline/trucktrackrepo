@@ -10,7 +10,12 @@ namespace dal
 
       public trucktrackContext(DbContextOptions<trucktrackContext> options) : base(options) { }
 
-      public virtual DbSet<user> user { get; set; }
+      public virtual DbSet<dal.user> users { get; set; }
+      public virtual DbSet<dal.report> reports {get; set;}
+
+      public virtual DbSet<dal.location> locations {get; set;}
+
+      public virtual DbSet<dal.truck> trucks {get; set;}
 
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
@@ -21,11 +26,9 @@ namespace dal
       protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
          modelBuilder.ApplyConfiguration(new UserEntityTypeConfiguration());
-
+         modelBuilder.ApplyConfiguration(new ReportEntityTypeConfiguration());
          modelBuilder.ApplyConfiguration(new LocationEntityTypeConfiguration());
-         
-         modelBuilder.ApplyConfiguration(new TruckEntityTypeConfiguration()) ;
-         
+         modelBuilder.ApplyConfiguration(new TruckEntityTypeConfiguration()) ;  
       }
    }
 }
