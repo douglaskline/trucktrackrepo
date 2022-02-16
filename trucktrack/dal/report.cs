@@ -19,7 +19,7 @@ namespace dal
       public dal.user user {get; set;}
       public dal.location location {get; set;}
       public dal.truck truck {get; set;}
-            public byte[] timeStamp {get; set;}
+      public byte[] timeStamp {get; set;}
 
    }
 }
