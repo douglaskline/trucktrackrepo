@@ -14,6 +14,10 @@ namespace dal
          builder.ToTable("report");
          
          builder.HasKey(r=>r.Id);
+         builder.HasOne("truck");
+         builder.HasOne("user");
+         builder.HasOne("location");
+ 
 
          //builder.HasOne 
          /*
