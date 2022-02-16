@@ -13,6 +13,10 @@ namespace dal
       public virtual DbSet<dal.user> users { get; set; }
       public virtual DbSet<dal.report> reports {get; set;}
 
+      public virtual DbSet<dal.location> locations {get; set;}
+
+      public virtual DbSet<dal.truck> trucks {get; set;}
+
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
          if (!optionsBuilder.IsConfigured)
