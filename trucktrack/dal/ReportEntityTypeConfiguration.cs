@@ -14,9 +14,9 @@ namespace dal
          builder.ToTable("report");
          
          builder.HasKey(r=>r.Id);
-         builder.HasOne(r=>r.truck).WithMany(t=>t.reports).IsRequired().OnDelete(DeleteBehavior.SetNull);
+         builder.HasOne(r=>r.truck).WithMany(t=>t.reports).IsRequired().OnDelete(DeleteBehavior.Restrict);
          builder.HasOne(r=>r.user).WithMany(u=>u.reports).OnDelete(DeleteBehavior.SetNull);
-         builder.HasOne(r=>r.location).WithMany(l=>l.reports).IsRequired().OnDelete(DeleteBehavior.SetNull);
+         builder.HasOne(r=>r.location).WithMany(l=>l.reports).IsRequired().OnDelete(DeleteBehavior.Restrict);
  
          builder
             .Property(r=> r.reportTime)
