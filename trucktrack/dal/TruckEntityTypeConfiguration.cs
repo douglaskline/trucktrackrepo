@@ -11,6 +11,8 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.truck> builder)
       {
+         builder.ToTable("truck");
+         
          builder
             .Property(t => t.truckId)
             .HasColumnName("truckId")
