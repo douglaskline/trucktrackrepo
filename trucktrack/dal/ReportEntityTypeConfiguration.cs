@@ -14,45 +14,13 @@ namespace dal
          builder.ToTable("report");
          
          builder.HasKey(r=>r.Id);
-         builder.HasOne("truck");
-         builder.HasOne("user");
-         builder.HasOne("location");
+         builder.HasOne(r=>r.truck).WithMany(t=>t.reports).IsRequired().OnDelete(DeleteBehavior.SetNull);
+         builder.HasOne(r=>r.user).WithMany(u=>u.reports).OnDelete(DeleteBehavior.SetNull);
+         builder.HasOne(r=>r.location).WithMany(l=>l.reports).IsRequired().OnDelete(DeleteBehavior.SetNull);
  
-
-         //builder.HasOne 
-         /*
-         builder
-            .HasOne(r=r.userId)
-            .WithMany(r=r.)
-
-         builder
-            .HasOne(r=>r.userId)
-            .WithMany()
-            .HasForeignKey<dal.user> (r=>r.userId);
-
          builder
             .Property(r=> r.reportTime)
             .IsRequired();
-         
-         builder
-            .Property(r=> r.Id)
-            .IsRequired();
-
-         builder
-            .Property(r=> r.userId)
-            .IsRequired();
-
-          builder
-            .Property(r=> r.truckId)
-            .IsRequired();  
-
-         builder
-            .Property(r=> r.locationId)
-            .IsRequired();
-
-
-         
-            */
 
          builder.Property(r => r.timeStamp).IsRowVersion();
 
