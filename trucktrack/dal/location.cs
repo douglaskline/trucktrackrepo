@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace dal
 {
@@ -11,5 +12,8 @@ namespace dal
       public float longitude { get; set; }
       public string geocode { get; set; }
       public string locationDescription { get; set; }
+      public byte[] timeStamp {get; set;}
+      public List<report> reports {get; set;}
+
    }
 }

@@ -9,7 +9,6 @@ namespace dal
 
       public DateTime reportTime {get;set;}
 
-
       public int truckId {get; set;}
       public int locationId {get; set;}
 
@@ -18,5 +17,9 @@ namespace dal
       
       public int userId {get; set;}
       public dal.user user {get; set;}
+      public dal.location location {get; set;}
+      public dal.truck truck {get; set;}
+      public byte[] timeStamp {get; set;}
+
    }
 }

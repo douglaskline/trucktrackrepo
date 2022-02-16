@@ -11,6 +11,8 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.truck> builder)
       {
+         builder.ToTable("truck");
+         
          builder
             .Property(t => t.truckId)
             .HasColumnName("truckId")
@@ -40,6 +42,9 @@ namespace dal
 
          builder
             .Property(t => t.truckURL);
+
+         builder.Property(t => t.timeStamp).IsRowVersion();
+
 
       }
    }

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace dal
 {
@@ -14,6 +15,10 @@ namespace dal
       public string tagLine { get; set; }
 
       public string truckURL { get; set; }
+            public byte[] timeStamp {get; set;}
+      public List<report> reports {get; set;}
+
+
 
    }
 }
