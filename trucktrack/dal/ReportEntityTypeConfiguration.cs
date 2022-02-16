@@ -11,6 +11,8 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.report> builder)
       {
+         builder.ToTable("report");
+         
          builder.HasKey(r=>r.Id);
 
          //builder.HasOne 
