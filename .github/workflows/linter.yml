@@ -56,7 +56,6 @@ jobs:
         env:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/*.
-          VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
