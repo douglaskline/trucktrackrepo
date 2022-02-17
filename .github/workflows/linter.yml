@@ -44,7 +44,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
+          # Full git history is needed to get a proper list 
+          # of changed files within `super-linter`
           fetch-depth: 0
 
       ################################
@@ -54,7 +55,7 @@ jobs:
         uses: github/super-linter@v4
         env:
           # Only lint the trucktrack folder 
-          # FILTER_REGEX_INCLUDE: .*trucktrack/ui/Controllers/*.
+          FILTER_REGEX_INCLUDE: .*trucktrack/*.
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
