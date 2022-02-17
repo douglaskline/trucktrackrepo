@@ -10,14 +10,14 @@ namespace ui.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Trucks");
         }
         // GET: /HelloWorld/Welcome/ 
         // Requires using System.Text.Encodings.Web;
 
-        public string Details(int ID = 1)
+        public IActionResult Details(int ID)
         {
-            return HtmlEncoder.Default.Encode($"Truck Number {ID}");
+            return View("Details");
         }
     }
 }
