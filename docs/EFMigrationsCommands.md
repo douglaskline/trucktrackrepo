@@ -11,11 +11,13 @@ Typically, we will make changes to our model classes and dbContext (for example 
 To use the ef tools, such as migrations, you need to install it at the command line like this:
 
 ```shell
-dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 5.0.14
+dotnet tool install --global dotnet-aspnet-codegenerator --version 5.0.2
 
 ```
 
 On my mac, I had to also run this to add the tools to my path variable:
+
 ```shell
 cat << \EOF >> ~/.zprofile
 # Add .NET Core SDK tools
@@ -24,6 +26,7 @@ EOF
 ```
 
 ## Create a migration
+
 ```shell
 % cd dal
 # make sure you are in the dal project folder
@@ -42,5 +45,3 @@ The command above should create some files under the /trucktrack/dal/Migrations 
 
 dotnet ef migrations script 0  InitialMigration -o dbmigration.sql -- connectionstring
 ```
-
-
