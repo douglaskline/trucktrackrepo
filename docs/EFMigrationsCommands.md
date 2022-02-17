@@ -11,7 +11,8 @@ Typically, we will make changes to our model classes and dbContext (for example 
 To use the ef tools, such as migrations, you need to install it at the command line like this:
 
 ```shell
-dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 5.0.14
+dotnet tool install --global dotnet-aspnet-codegenerator --version 5.0.2
 
 ```
 
