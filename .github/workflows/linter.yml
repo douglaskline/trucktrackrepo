@@ -15,7 +15,7 @@ name: Lint Code Base
 # Start the job at 1am UTC or 8pm Wimington, NC time #
 #############################
 on:
-  push: 
+  # push: 
   schedule:
   # -cron: mins, hrs, day of the month, month, day of the week 
   # Uses UTC which is 5 hours ahead of Wilmington, NC
