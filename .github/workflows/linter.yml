@@ -22,6 +22,8 @@ on:
   # Schedule to run everynight at 8pm Wilmingtion time and 1am UTC
     - cron:  '0 1 * * * '
 
+  workflow_dispatch:
+
 ###############
 # Set the Job #
 ###############
