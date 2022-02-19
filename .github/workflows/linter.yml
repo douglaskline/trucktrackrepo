@@ -53,8 +53,6 @@ jobs:
       ################################
       - name: Lint Code Base
         uses: github/super-linter@v4
-        rules: 
-          trailing-spaces: disable
         env:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
@@ -64,4 +62,4 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: ERROR
-          
+          FORMAT: no-space-check=trailing-comma,dict-separator
