@@ -53,17 +53,15 @@ jobs:
       ################################
       - name: Lint Code Base
         uses: github/super-linter@v4
-        rules: 
-          trailing-spaces: disable
         env:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
           FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
           # FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
+          LINTER_RULES_PATH: .github/workflows/customRules.jsonc
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LOG_LEVEL: ERROR
-
+          LOG_LEVEL: WARN
         
 
         
