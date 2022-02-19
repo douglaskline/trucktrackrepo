@@ -57,7 +57,7 @@ jobs:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
           FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
-          FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
+          # FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: ERROR
