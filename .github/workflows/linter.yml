@@ -58,11 +58,17 @@ jobs:
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
           FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
           # FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
-          # LINTER_RULES_PATH: .github/workflows/customRules.json
-          EDITORCONFIG_FILE_NAME: .github/workflows/customconfig.ecrc
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: WARN
-        
+          MD009: false
+          MD010: false
+          MD012: false
+          MD027: false
+          MD028: false
+          MD030: false
+          MD037: false
+          MD038: false
+          MD039: false 
 
         
