@@ -57,9 +57,12 @@ jobs:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
           FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
-          # When false it only lints new files 
-          # VALIDATE_ALL_CODEBASE: false
+          FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOG_LEVEL: ERROR
-          FORMAT: no-space-check=trailing-comma,dict-separator
+
+        rules: 
+          trailing-spaces: disable
+
+        
