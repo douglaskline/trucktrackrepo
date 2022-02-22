@@ -20,9 +20,7 @@ on:
   # # -cron: mins, hrs, day of the month, month, day of the week 
   # # Uses UTC which is 5 hours ahead of Wilmington, NC
   # # Schedule to run everynight at 8pm Wilmingtion time and 1am UTC
-  #   - cron:  '0 2 * * * '
-
-  # workflow_dispatch:
+  #   - cron:  '0 1 * * * '
 
 ###############
 # Set the Job #
@@ -57,18 +55,7 @@ jobs:
           # Only lint the trucktrack folder 
           FILTER_REGEX_INCLUDE: .*trucktrack/.*
           FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
-          # FILTER_REGEX_EXCLUDE: .*trucktrack/dal/Migrations/.*
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LOG_LEVEL: WARN
-          MD009: false
-          MD010: false
-          MD012: false
-          MD027: false
-          MD028: false
-          MD030: false
-          MD037: false
-          MD038: false
-          MD039: false 
-
-        
+          LOG_LEVEL: ERROR
+          LINTER_RULES_PATH: .github/workflows/customRules.json
