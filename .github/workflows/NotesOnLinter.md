@@ -4,7 +4,11 @@ Super Linter Badge for ReadMe: [![GitHub Super-Linter](https://github.com/<OWNER
 
 Custom rules?  
 https://github.com/DavidAnson/markdownlint#optionsconfig
+https://github.com/github/super-linter/blob/main/docs/using-rules-files.md
+https://github.com/github/super-linter/blob/main/docs/disabling-linters.md
 
 For schduler to work it has to be in the master branch 
 https://stackoverflow.com/questions/63436541/github-action-workflow-schedule-not-working-on-non-default-branch
 
+Config file
+https://github.com/github/super-linter/blob/main/.github/linters/.ecrc
