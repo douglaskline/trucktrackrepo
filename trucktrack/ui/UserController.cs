@@ -21,7 +21,7 @@ namespace ui
         // GET: User
         public async Task<IActionResult> Index()
         {
-            return View(await _context.user.ToListAsync());
+            return View(await _context.users.ToListAsync());
         }
 
         // GET: User/Details/5
@@ -32,7 +32,7 @@ namespace ui
                 return NotFound();
             }
 
-            var user = await _context.user
+            var user = await _context.users
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
             {
@@ -72,7 +72,7 @@ namespace ui
                 return NotFound();
             }
 
-            var user = await _context.user.FindAsync(id);
+            var user = await _context.users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace ui
                 return NotFound();
             }
 
-            var user = await _context.user
+            var user = await _context.users
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
             {
@@ -138,15 +138,15 @@ namespace ui
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.user.FindAsync(id);
-            _context.user.Remove(user);
+            var user = await _context.users.FindAsync(id);
+            _context.users.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool userExists(int id)
         {
-            return _context.user.Any(e => e.Id == id);
+            return _context.users.Any(e => e.Id == id);
         }
     }
 }

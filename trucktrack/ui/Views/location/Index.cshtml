@@ -1,0 +1,65 @@
+@model IEnumerable<dal.location>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.locationName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.longitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.geocode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.locationDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.timeStamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.locationName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.longitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.geocode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.locationDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.timeStamp)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.locationId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.locationId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.locationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

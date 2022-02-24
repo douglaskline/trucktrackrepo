@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace dal
 {
@@ -10,5 +12,8 @@ namespace dal
 
       public string username { get; set; }
       public string email { get; set; }
+
+      public byte[] timeStamp {get; set;}
+      public List<report> reports {get; set;}
    }
 }

@@ -11,6 +11,9 @@ namespace dal
    {
       public void Configure(EntityTypeBuilder<dal.user> builder)
       {
+         builder.ToTable("user");
+         
+         
          builder
             .Property(u => u.Id)
             .HasColumnName("Id")
@@ -30,6 +33,8 @@ namespace dal
          builder
             .Property(u => u.email)
             .IsRequired();
+
+         builder.Property(u => u.timeStamp).IsRowVersion();
       }
    }
 }
