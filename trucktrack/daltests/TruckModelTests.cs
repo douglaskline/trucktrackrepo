@@ -14,6 +14,10 @@ namespace daltests
             string homeCity = "Wilmington";
             string homeState = "NC";
             string url = "https://www.banhsaifoodtruck.com/";
+            string priceRange = "$$$";
+            string tagLine = "Asian fusion street food, brought to your streets";
+            string foodStyle = "Asian Fusion";
+            int truckId = 17;
 
             // act
             dal.truck tr = new dal.truck();
@@ -21,13 +25,20 @@ namespace daltests
             tr.homeCity = homeCity;
             tr.homeState = homeState;
             tr.truckURL = url;
+            tr.priceRange = priceRange;
+            tr.tagLine = tagLine;
+            tr.foodStyle = foodStyle;
+            tr.truckId = truckId;
 
             // assert
             Assert.Equal(tr.truckName,truckName);
             Assert.Equal(tr.homeCity,homeCity);
             Assert.Equal(tr.homeState,homeState);
             Assert.Equal(tr.truckURL,url);
-          
+            Assert.Equal(tr.priceRange, priceRange);
+            Assert.Equal(tr.tagLine, tagLine);
+            Assert.Equal(tr.foodStyle, foodStyle);
+            Assert.Equal(tr.truckId, truckId) ;         
         }
 
  
