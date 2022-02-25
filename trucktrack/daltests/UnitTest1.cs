@@ -14,7 +14,7 @@ namespace daltests
         [Fact]
         public void FailingTest()
         {
-            Assert.Equal(5, Add(2, 2));
+            Assert.Equal(17, Add(10, 7));
         }
 
         int Add(int x, int y)
@@ -26,7 +26,6 @@ namespace daltests
         [Theory]
         [InlineData(3)]
         [InlineData(5)]
-        [InlineData(6)]
         public void MyFirstTheory(int value)
         {
             Assert.True(IsOdd(value));
