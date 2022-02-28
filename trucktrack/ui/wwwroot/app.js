@@ -1,10 +1,13 @@
 function initMap() { 
 
-    var options = {
-        center: {lat: 34.2104 ,lng: 77.8868 },
-        zoom: 16
-    }
+    var wilm = {
+        lat: 34.2104,
+        lng: 77.8868
+        };
 
-     map = new google.maps.Map(document.getElementById("map"),options)
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: wilm,
+        zoom: 16
+    });
    
-}
+};
