@@ -41,14 +41,7 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.locationDescription)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.timeStamp)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.timeStamp)
-        </dd>
     </dl>
-    
     <form asp-action="Delete">
         <input type="hidden" asp-for="locationId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
