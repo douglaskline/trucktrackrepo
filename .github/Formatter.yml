@@ -17,7 +17,7 @@ jobs:
                   CI: true
 
             - name: Run prettier
-              run: yarn run prettier --write 'trucktrack/utiltests/*.{css,cs}'
+              run: yarn run prettier --write 'trucktrackrepo/trucktrack/utiltests/*.{css,cs}'
 
             - uses: stefanzweifel/git-auto-commit-action@v4
               with:
