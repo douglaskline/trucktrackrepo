@@ -2,6 +2,8 @@ name: Format (prettier)
 
 on:
     push:
+        branches:
+            - 'issue-245-set_up_a_code_formatting_action_in_github_to_run_nightly'
 
 jobs:
     prettier:
@@ -22,4 +24,3 @@ jobs:
             - uses: stefanzweifel/git-auto-commit-action@v4
               with:
                   commit_message: Apply prettier changes
-                  
