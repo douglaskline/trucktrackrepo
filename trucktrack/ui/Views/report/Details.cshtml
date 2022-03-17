@@ -1,0 +1,60 @@
+@model dal.report
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>report</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.reportTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.reportTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.startTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.startTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.endTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.endTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.user)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.user.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.location.locationName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.truck)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.truck.truckName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.timeStamp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.timeStamp)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
