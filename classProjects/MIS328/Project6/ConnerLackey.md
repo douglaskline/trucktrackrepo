@@ -9,6 +9,11 @@ My classes this semster
 * MIS 328
 * MIS 411
 * MIS 480
+## CHANGED FOR PROJECT 11-2 ##
+
+
+
+
 
 Days of the Week:
 1. Monday 
