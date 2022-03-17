@@ -1,0 +1,62 @@
+---
+#################################
+#################################
+## Super Linter GitHub Actions ##
+#################################
+#################################
+name: Lint Code Base
+
+#
+# Documentation:
+# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+#
+
+#############################
+# Start the job at 1am UTC or 8pm Wimington, NC time #
+#############################
+on:
+  # push: 
+  # schedule:
+  # # -cron: mins, hrs, day of the month, month, day of the week 
+  # # Uses UTC which is 5 hours ahead of Wilmington, NC
+  # # Schedule to run everynight at 8pm Wilmingtion time and 1am UTC
+  #   - cron:  '0 1 * * * '
+  workflow-dispatch: 
+
+###############
+# Set the Job #
+###############
+jobs:
+  build:
+    # Name the Job
+    name: Lint Code Base
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list 
+          # of changed files within `super-linter`
+          fetch-depth: 0
+
+      ################################
+      # Run Linter against code base #
+      ################################
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          # Only lint the trucktrack folder 
+          FILTER_REGEX_INCLUDE: .*trucktrack/.*
+          FILTER_REGEX_EXCLUDE: .*trucktrack/ui/wwwroot/lib/.*
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOG_LEVEL: ERROR
+          
