@@ -19,23 +19,20 @@ namespace dal
             .IsRequired();
 
          builder
-            .Property(t => t.truckName);
-
-         builder
-            .Property(t => t.homeCity)
+            .Property(t => t.truckName)
             .IsRequired();
 
          builder
-            .Property(t => t.homeState)
-            .IsRequired();
+            .Property(t => t.homeCity);
 
          builder
-            .Property(t => t.foodStyle)
-            .IsRequired();
+            .Property(t => t.homeState);
 
          builder
-            .Property(t => t.priceRange)
-            .IsRequired();
+            .Property(t => t.foodStyle);
+
+         builder
+            .Property(t => t.priceRange);
 
          builder
             .Property(t => t.tagLine);
