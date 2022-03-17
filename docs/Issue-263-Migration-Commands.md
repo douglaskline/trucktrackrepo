@@ -26,15 +26,15 @@ dotnet ef migrations add fourthMigration -c trucktrackContext -s ../ui/ui.csproj
 ```
 
 The command above should create some files under the /trucktrack/dal/Migrations folder.
-Get into the dal/Migrations folder before issue the each commands
+Get into the dal folder before issue the each commands
 
 ## Create a sql script from the migration
 
 
 ```shell
 % cd Migrations
-# make sure you are in the /trucktrack/dal/Migrations folder
+# make sure you are in the /trucktrack/dal folder
 
-dotnet ef migrations script thirdMigration fourthMigration -o fourthMigration.sql -s ../ui/ui.csproj
+dotnet ef migrations script thirdMigration fourthMigration -o fourthMigration.sql
 
 ```
