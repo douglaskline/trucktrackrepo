@@ -64,13 +64,13 @@ namespace ui
 
             app.UseEndpoints(endpoints =>
             {
-                // endpoints.MapControllerRoute(
-                //     name: "default",
-                //     pattern: "{controller=Home}/{action=Index}/{id?}");
-
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Nearby}/{action=Index}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+              
+              // Thought I had to make changes here 
+              // Made changes in the controllers to get view to appear 
+          
             });
         }
     }
