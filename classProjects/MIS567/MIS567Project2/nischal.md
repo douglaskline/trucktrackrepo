@@ -1,1 +1,1 @@
-This is MIS 506 class course work.
+This is MIS 567 class course work.
