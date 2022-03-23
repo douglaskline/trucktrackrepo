@@ -4,7 +4,7 @@ using util;
 
 namespace utiltests
 {
-    public class utilTest1
+    public class KlineProj13
     {
         [Fact]
         public void DistanceCalculatorConstructorWorks()
@@ -15,28 +15,28 @@ namespace utiltests
             // act
 
             // assert
-          Assert.IsType<util.DistanceCalculator>(d);       
+            Assert.IsType<util.DistanceCalculator>(d);
         }
 
         [Fact]
-         public void CongdonToKureBeachPierTest()
+        public void CongdonToKureBeachPierTest()
         {
             // arrange
-            
-            double xLat = 34.22697;
-            double xLong = -77.86989;
-            double yLat = 34.24539;
-            double yLong = -77.95102;
+
+            double CongdonHallLat = 34.22408243140725;
+            double CongdonHallLong = -77.86957140799039;
+            double KureBeachPierLat = 33.99806282719807;
+            double KureBeachPierLong = -77.90575492327699;
             // act
-            double expected = 4.802481904079362;
-            double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
-            
+            double expected = 15.90;
+            double actual = DistanceCalculator.EuclideanDistance(CongdonHallLat, CongdonHallLong, KureBeachPierLat, KureBeachPierLong);
+
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.0001);
-          
-          
+            Xunit.Assert.True(difference <= 0.1);
+
+
         }
 
     }
