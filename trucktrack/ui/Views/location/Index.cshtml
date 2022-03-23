@@ -27,6 +27,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.locationDescription)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.timeStamp)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -47,6 +50,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.locationDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.timeStamp)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.locationId">Edit</a> |

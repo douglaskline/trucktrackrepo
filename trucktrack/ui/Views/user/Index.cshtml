@@ -1,4 +1,4 @@
-@model IEnumerable<dal.report>
+@model IEnumerable<dal.user>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,22 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.reportTime)
+                @Html.DisplayNameFor(model => model.firstName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.startTime)
+                @Html.DisplayNameFor(model => model.lastName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.endTime)
+                @Html.DisplayNameFor(model => model.username)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.user)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.location)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.truck)
+                @Html.DisplayNameFor(model => model.email)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.timeStamp)
@@ -40,22 +34,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.reportTime)
+                @Html.DisplayFor(modelItem => item.firstName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.startTime)
+                @Html.DisplayFor(modelItem => item.lastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.endTime)
+                @Html.DisplayFor(modelItem => item.username)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.user.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.location.locationName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.truck.truckName)
+                @Html.DisplayFor(modelItem => item.email)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.timeStamp)

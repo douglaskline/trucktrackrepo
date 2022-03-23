@@ -50,7 +50,7 @@ namespace ui.Controllers
         public IActionResult Create()
         {
             ViewData["locationId"] = new SelectList(_context.locations, "locationId", "locationName");
-            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "foodStyle");
+            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "truckName");
             ViewData["userId"] = new SelectList(_context.users, "Id", "email");
             return View();
         }
@@ -69,7 +69,7 @@ namespace ui.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["locationId"] = new SelectList(_context.locations, "locationId", "locationName", report.locationId);
-            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "foodStyle", report.truckId);
+            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "truckName", report.truckId);
             ViewData["userId"] = new SelectList(_context.users, "Id", "email", report.userId);
             return View(report);
         }
@@ -88,7 +88,7 @@ namespace ui.Controllers
                 return NotFound();
             }
             ViewData["locationId"] = new SelectList(_context.locations, "locationId", "locationName", report.locationId);
-            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "foodStyle", report.truckId);
+            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "truckName", report.truckId);
             ViewData["userId"] = new SelectList(_context.users, "Id", "email", report.userId);
             return View(report);
         }
@@ -126,7 +126,7 @@ namespace ui.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["locationId"] = new SelectList(_context.locations, "locationId", "locationName", report.locationId);
-            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "foodStyle", report.truckId);
+            ViewData["truckId"] = new SelectList(_context.trucks, "truckId", "truckName", report.truckId);
             ViewData["userId"] = new SelectList(_context.users, "Id", "email", report.userId);
             return View(report);
         }
