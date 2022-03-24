@@ -9,6 +9,11 @@ My classes this semster
 * MIS 328
 * MIS 411
 * MIS 480
+This is my resolved line of code.
+
+
+
+
 
 Days of the Week:
 1. Monday 

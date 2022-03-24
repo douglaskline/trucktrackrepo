@@ -19,29 +19,40 @@ namespace dal
             .IsRequired();
 
          builder
-            .Property(t => t.truckName);
+            .Property(t => t.truckName)
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(200)
+            .IsRequired();
 
          builder
             .Property(t => t.homeCity)
-            .IsRequired();
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(75);
 
          builder
             .Property(t => t.homeState)
-            .IsRequired();
+            .HasColumnType("CHAR")
+            .HasMaxLength(2);
 
          builder
             .Property(t => t.foodStyle)
-            .IsRequired();
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(75);
 
          builder
             .Property(t => t.priceRange)
-            .IsRequired();
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(10);
 
          builder
-            .Property(t => t.tagLine);
+            .Property(t => t.tagLine)
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(200);
 
          builder
-            .Property(t => t.truckURL);
+            .Property(t => t.truckURL)
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(300);
 
          builder.Property(t => t.timeStamp).IsRowVersion();
 

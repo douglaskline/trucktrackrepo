@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dal\dal.csproj" />
+    <ProjectReference Include="..\util\util.csproj" />
   </ItemGroup>
 
 </Project>
