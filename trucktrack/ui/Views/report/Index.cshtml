@@ -30,6 +30,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.truck)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.timeStamp)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -52,7 +55,10 @@
                 @Html.DisplayFor(modelItem => item.location.locationName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.truck.foodStyle)
+                @Html.DisplayFor(modelItem => item.truck.truckName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.timeStamp)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
