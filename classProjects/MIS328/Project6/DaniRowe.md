@@ -1,4 +1,4 @@
-# Dani Rowe is Da Bomb
+# Dani Rowe 
 
 ## Student
 
