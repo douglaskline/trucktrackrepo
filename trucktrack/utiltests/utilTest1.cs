@@ -32,7 +32,9 @@ namespace utiltests
             double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
             
             // assert
-          Xunit.Assert.Equal(expected,actual);
+            double difference = Math.Abs(expected - actual);
+
+          Xunit.Assert.True (difference <= 0.0001);
           
           
         }
