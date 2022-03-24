@@ -9,7 +9,7 @@ Big 3 Anime:
 * Bleach
 
 Sneaker Brands (ranked):
-1. Nike
+1. Asics
 2. Jordan
 3. Adidas
 
