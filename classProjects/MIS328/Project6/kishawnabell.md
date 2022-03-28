@@ -9,7 +9,7 @@ Favorite Seasons
 * Summer
 * Winter
 * Fall 
-* Spring
+* Autumn 
 
 Favorite Colors 
 1. Pink

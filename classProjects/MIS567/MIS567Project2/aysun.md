@@ -1,2 +1,2 @@
 this is Aysun
-i wrote something different than the branch 340 - which was item A for the project 7
+THIS IS MY FINAL LINE 2, i did not want either Item A or Item B, i created a new line 2 with these sentences
