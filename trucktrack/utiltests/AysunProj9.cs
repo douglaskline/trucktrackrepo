@@ -2,9 +2,9 @@ using System;
 using Xunit;
 using util;
 
-namespace AysunProj9
+namespace utiltests
 {
-    public class utilTest1
+    public class AysunProj9
     {
         [Fact]
         public void DistanceCalculatorConstructorWorks()
