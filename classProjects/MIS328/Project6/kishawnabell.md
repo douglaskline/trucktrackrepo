@@ -9,8 +9,7 @@ Favorite Seasons
 * Summer
 * Winter
 * Fall 
-* Spring
-* Sunny days
+This is my resolved line of code.
 Favorite Colors 
 1. Pink
 2. Orange
