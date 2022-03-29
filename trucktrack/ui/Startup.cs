@@ -64,6 +64,11 @@ namespace ui
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(   
+                    name: "nearby",
+                    pattern: "nearby/{*index}/{double?}/{double?}",
+                    defaults: new { controller = "Nearby", action = "Index" });
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
