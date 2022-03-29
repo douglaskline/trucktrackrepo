@@ -1,5 +1,22 @@
+@model IEnumerable<dal.location>
 @{
     ViewData["Title"] = "Nearby Page";
 }
 
 <h1>Nearby View</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.longitude)
+            </th>
+        </tr>
+    </thead>
+</table>

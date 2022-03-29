@@ -18,9 +18,10 @@ namespace ui.Controllers
             _context = context;
         }
 
-        public IActionResult Index ()
+        [Route("Nearby/Index/{latitude}/{longitude}")]
+        public IActionResult Index (double latitude, double longitude)
         {
-          return View();
+          return View(latitude, longitude);
         }
         
     }
