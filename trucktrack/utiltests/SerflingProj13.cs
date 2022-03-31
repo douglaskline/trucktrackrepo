@@ -23,10 +23,10 @@ namespace utiltests
         {
             // arrange
             
-            double xLat = 34.22697;
-            double xLong = -77.86989;
-            double yLat = 34.24539;
-            double yLong = -77.95102;
+            double xLat = 39.92495;
+            double xLong = -74.86540;
+            double yLat = 36.11603;
+            double yLong = -75.74566;
             // act
             double expected = 4.802481904079362;
             double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
@@ -34,7 +34,7 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.0001);
+          Xunit.Assert.True(difference <= 0.000000025, "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
           
           
         }
