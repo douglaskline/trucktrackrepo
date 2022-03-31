@@ -38,7 +38,7 @@ namespace utiltests
           
           
 
-Xunit.Assert.True(difference <= 0.000000025,
+Xunit.Assert.True(difference <= 0.25,
        "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
 
 
