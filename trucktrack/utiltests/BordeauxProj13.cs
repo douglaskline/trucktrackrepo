@@ -23,10 +23,10 @@ namespace utiltests
         {
             // arrange
             
-            double xLat = 34.22697;
-            double xLong = -77.86989;
-            double yLat = 34.24539;
-            double yLong = -77.95102;
+            double xLat = 28.37820;
+            double xLong = -81.57040;
+            double yLat = 36.21718;
+            double yLong = -86.69049;
             // act
             double expected = 4.802481904079362;
             double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
