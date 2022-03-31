@@ -23,7 +23,7 @@ namespace utiltests
         {
             // arrange
             
-            double xLat = 34.22697;
+            double TapTeaLat = 34.22697;
             double xLong = -77.86989;
             double yLat = 34.24539;
             double yLong = -77.95102;
