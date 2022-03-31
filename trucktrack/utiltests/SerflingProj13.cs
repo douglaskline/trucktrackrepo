@@ -21,20 +21,27 @@ namespace utiltests
         [Fact]
          public void DistanceCalculatorEuclideanDistance()
         {
+
+            // 4206 Academy Cove to Aspire 349 bus stop
+
             // arrange
             
-            double xLat = 39.92495;
-            double xLong = -74.86540;
-            double yLat = 36.11603;
-            double yLong = -75.74566;
+            double xLat = 34.23521;
+            double xLong = -77.89001;
+            double yLat = 34.23526;
+            double yLong = -77.89130;
             // act
-            double expected = 4.802481904079362;
+            double expected = 0.0740965909;
             double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
             
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True(difference <= 0.000000025, "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
+
+            Xunit.Assert.True(difference <= 0.25,"actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
+
+
+
         }
 
     }
