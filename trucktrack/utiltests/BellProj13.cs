@@ -19,7 +19,7 @@ namespace utiltests
         }
 
         [Fact]
-         public void DistanceCalculatorEuclideanDistance()
+         public async void DistanceCalculatorEuclideanDistance()
         {
             // arrange
             
@@ -34,7 +34,7 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.0001);
+          Xunit.Assert.True (difference <= 0.0001, "actual: " + actual.ToString() + "expected: " + expected.ToString() + " diff: " + await.ToString());
           
           
         }
