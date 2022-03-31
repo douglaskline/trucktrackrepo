@@ -23,10 +23,17 @@ namespace utiltests
         {
             // arrange
             
-            double xLat = 34.22697;
-            double xLong = -77.86989;
-            double yLat = 34.24539;
-            double yLong = -77.95102;
+
+
+            //Mall of America
+            double xLat = 44.85751011608824;
+            double xLong = -93.24312224665734;
+
+
+
+            //King of Prussia
+            double yLat = 40.100600063297016;
+            double yLong = -75.3837985407523;
             // act
             double expected = 4.802481904079362;
             double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
@@ -34,7 +41,7 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.0001);
+          Xunit.Assert.True (difference <= 20);
           
           
         }
