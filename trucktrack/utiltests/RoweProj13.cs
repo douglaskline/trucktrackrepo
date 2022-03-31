@@ -4,7 +4,7 @@ using util;
 
 namespace utiltests
 {
-    public class NguyenProj13
+    public class RoweProj13
     {
         [Fact]
         public void DistanceCalculatorConstructorWorks()
@@ -23,18 +23,20 @@ namespace utiltests
         {
             // arrange
             
-            double CongdonHallLat = 34.22697;
-            double CongdonHallLong = -77.86989;
-            double BatmanLat = 37.88954;
-            double BatmanLong = -41.12929;
+            //Lighthouse Apts
+            double LALat = 34.23139276818082;
+            double LALong = -77.87990892948537;
+            //Pour Taproom
+            double PTLat = 34.23787111250938;
+            double PTLong = -77.94921627366021;
             // act
-            double expected = 6103.35;
-            double actual = DistanceCalculator.EuclideanDistance(CongdonHallLat,CongdonHallLong,BatmanLat,BatmanLong);
+            double expected = 4.00;
+            double actual = DistanceCalculator.EuclideanDistance(LALat,LALong,PTLat,PTLong);
             
             // assert
             double difference = Math.Abs(expected - actual);
 
-         Xunit.Assert.True(difference <= 0.000000025, "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
+          Xunit.Assert.True(difference <= 0.25, "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
           
           
         }
