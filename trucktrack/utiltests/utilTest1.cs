@@ -77,8 +77,26 @@ namespace utiltests
 
           Xunit.Assert.True (difference <= 0.01,
              "expected: " + expected.ToString() + " actual: "+ actual.ToString());
-          
-          
+        }
+
+                [Fact]
+         public void DistanceCalculatorRectilinear()
+        {
+            // arrange
+            
+            double xLat = 34.22697;
+            double xLong = -77.86989;
+            double yLat = 34.24539;
+            double yLong = -77.95102;
+            // act
+            double expected = 4.63 + 1.27;
+            double actual = DistanceCalculator.RectilinearDistance(xLat,xLong,yLat,yLong);
+            
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+          Xunit.Assert.True (difference <= 0.01,
+             "expected: " + expected.ToString() + " actual: "+ actual.ToString());
         }
 
     }

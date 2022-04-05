@@ -51,5 +51,14 @@ namespace util
 
             return Math.Sqrt(c*c - a*a);
         }
+
+        public static double RectilinearDistance(double xLat,
+                                        double xLong,
+                                        double yLat,
+                                        double yLong)
+        {
+            return DistanceCalculator.NSDistance(xLat, yLat)
+                    + DistanceCalculator.EWDistance(xLat, xLong, yLat, yLong);
+        }
     }
 }
