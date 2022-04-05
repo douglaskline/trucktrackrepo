@@ -19,9 +19,9 @@ namespace ui.Controllers
         }
 
         [Route("Nearby/Index/{latitude}/{longitude}")]
-        public IActionResult Index (double latitude, double longitude)
+        public async Task<ActionResult> Index(double? latitude, double? longitude)
         {
-          return View(latitude, longitude);
+          return View(await _context.trucks.ToListAsync());
         }
         
     }

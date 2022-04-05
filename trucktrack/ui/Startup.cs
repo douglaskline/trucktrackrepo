@@ -65,17 +65,17 @@ namespace ui
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(   
-                    name: "nearby",
-                    pattern: "nearby/{*index}/{double?}/{double?}",
-                    defaults: new { controller = "Nearby", action = "Index" });
+                    name: "Nearby",
+                    pattern: "{controller=Nearby}/{action=Index}/{lat?}/{long?}");
+                  
+                endpoints.MapControllerRoute(   
+                    name: "Find",
+                    pattern: "{controller=Find}//{action=Index}{searchTerm?}");
 
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
               
-              // Thought I had to make changes here 
-              // Made changes in the controllers to get view to appear 
-          
             });
         }
     }
