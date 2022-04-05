@@ -5,7 +5,7 @@ namespace util
     // referred to this page: http://www.movable-type.co.uk/scripts/gis-faq-5.1.html
     public class DistanceCalculator
     {
-        public const double RadiusOfEarthInMiles = 3956.0;
+        public const double RadiusOfEarthInMiles = 3958.898781;
         public static double EuclideanDistance(double xLat,
                                                double xLong,
                                                double yLat,
