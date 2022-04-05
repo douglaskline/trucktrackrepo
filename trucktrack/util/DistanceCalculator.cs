@@ -6,6 +6,8 @@ namespace util
     public class DistanceCalculator
     {
         public const double RadiusOfEarthInMiles = 3958.898781;
+        public const double MilesPerLatitudeDegree = 69.0;
+
         public static double EuclideanDistance(double xLat,
                                                double xLong,
                                                double yLat,
@@ -29,6 +31,25 @@ namespace util
             ;
 
             return d;
+        }
+        public static double NSDistance(double xLat,
+                                        double yLat)
+        {
+            return Math.Abs(xLat-yLat) * MilesPerLatitudeDegree;
+
+        }
+        public static double EWDistance(double xLat,
+                                        double xLong,
+                                        double yLat,
+                                        double yLong)
+        {
+            // NSDistance gives on side of right trangle
+            // Euclidean distance gives hypotenuse
+            // c^2 = a^2 + b^b
+            double c = DistanceCalculator.EuclideanDistance(xLat, xLong, yLat, yLong);
+            double a = DistanceCalculator.NSDistance(xLat, yLat);
+
+            return Math.Sqrt(c*c - a*a);
         }
     }
 }
