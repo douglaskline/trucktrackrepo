@@ -7,5 +7,6 @@ from the trucktrack root folder where the .sln file is
 dotnet new xunit -o uitests -f net5.0 
 cd uitests
 dotnet add reference ..\ui\ui.csproj
+dotnet add package Microsoft.AspNetCore.Mvc.Testing --version 5.0.15
 
 ```
