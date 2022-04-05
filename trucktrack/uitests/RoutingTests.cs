@@ -11,13 +11,15 @@ namespace uitests
         private readonly WebApplicationFactory<ui.Startup> _factory;
 
         public RoutingTests(WebApplicationFactory<ui.Startup> factory)
+    
         {
             _factory = factory;
         }
 
         [Theory]
         [InlineData("/")]
-        [InlineData("/Index")]
+        [InlineData("/Home/Index")]
+        [InlineData("/truck/Index")]
         public async Task EndpointsReturnSuccessAndCorrectType(string url)
         {
             // Arrange
@@ -30,6 +32,7 @@ namespace uitests
             response.EnsureSuccessStatusCode(); // Status Code 200-299
             Assert.Equal("text/html; charset=utf-8", 
                 response.Content.Headers.ContentType.ToString());
+            
         
 
         }
