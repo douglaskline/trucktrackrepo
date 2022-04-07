@@ -1,7 +1,8 @@
 using System;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
-namespace utiltests
+namespace uitests
 {
     public class UnitTest1
     {

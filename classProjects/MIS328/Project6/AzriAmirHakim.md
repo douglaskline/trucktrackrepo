@@ -7,7 +7,7 @@ Things I like
 * Chill People
 * Cool Stuff
 
-Things I dont like
+Things that I really dont like
 1. Unchill people
 2. Bad vibes
 3. Weird Stuff

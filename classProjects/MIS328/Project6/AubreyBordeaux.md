@@ -9,6 +9,7 @@
 * MIS 324
 * MIS 419
 * MIS 480
+____________________________
 
 1. Graduate
 2. Vacation

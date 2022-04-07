@@ -35,7 +35,9 @@ namespace dal
             .Property(l => l.geocode);
         
         builder
-            .Property(l => l.locationDescription);
+            .Property(l => l.locationDescription)
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(200);
 
          builder.Property(l => l.timeStamp).IsRowVersion();
 

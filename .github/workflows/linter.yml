@@ -1,28 +1,12 @@
----
-#################################
-#################################
-## Super Linter GitHub Actions ##
-#################################
-#################################
+# This is a basic workflow that is manually triggered
+
 name: Lint Code Base
 
-#
-# Documentation:
-# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
-#
-
-#############################
-# Start the job at 1am UTC or 8pm Wimington, NC time #
-#############################
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
 on:
-  # push: 
-  # schedule:
-  # # -cron: mins, hrs, day of the month, month, day of the week 
-  # # Uses UTC which is 5 hours ahead of Wilmington, NC
-  # # Schedule to run everynight at 8pm Wilmingtion time and 1am UTC
-  #   - cron:  '0 1 * * * '
-  workflow-dispatch: 
-
+  workflow_dispatch:
+        
 ###############
 # Set the Job #
 ###############

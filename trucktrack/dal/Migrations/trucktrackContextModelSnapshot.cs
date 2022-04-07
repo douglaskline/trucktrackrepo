@@ -34,7 +34,8 @@ namespace dal.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("locationDescription")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<string>("locationName")
                         .IsRequired()
@@ -103,23 +104,24 @@ namespace dal.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("foodStyle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(75)
+                        .HasColumnType("VARCHAR(75)");
 
                     b.Property<string>("homeCity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(75)
+                        .HasColumnType("VARCHAR(75)");
 
                     b.Property<string>("homeState")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2)
+                        .HasColumnType("CHAR(2)");
 
                     b.Property<string>("priceRange")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("VARCHAR(10)");
 
                     b.Property<string>("tagLine")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<byte[]>("timeStamp")
                         .IsConcurrencyToken()
@@ -127,10 +129,13 @@ namespace dal.Migrations
                         .HasColumnType("rowversion");
 
                     b.Property<string>("truckName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<string>("truckURL")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(300)
+                        .HasColumnType("VARCHAR(300)");
 
                     b.HasKey("truckId");
 
