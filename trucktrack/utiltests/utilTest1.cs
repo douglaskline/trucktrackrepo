@@ -98,6 +98,23 @@ namespace utiltests
           Xunit.Assert.True (difference <= 0.01,
              "expected: " + expected.ToString() + " actual: "+ actual.ToString());
         }
+ public void NSDistanceTestAmirHakim()
+        {
+            // arrange
+            
+            double xLat = 42.27307;
+            double yLat = 34.2111;
 
+            // act
+            double expected = 556.27593;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
     }
 }
