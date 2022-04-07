@@ -19,7 +19,7 @@ namespace utiltests
         }
 
         [Fact]
-         public async void DistanceCalculatorEuclideanDistance()
+         public  void DistanceCalculatorEuclideanDistance()
         {
             // arrange
             

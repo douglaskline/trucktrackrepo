@@ -4,7 +4,7 @@ using util;
 
 namespace utiltests
 {
-    public class utilTest1
+    public class HensleyProj13
     {
         [Fact]
         public void DistanceCalculatorConstructorWorks()
@@ -34,8 +34,8 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.25);
-           "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString();
+          Xunit.Assert.True (difference <= 0.25,
+           "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
           
         }
 
