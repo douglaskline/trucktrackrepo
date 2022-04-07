@@ -2,7 +2,7 @@
 
 ## Student
 
-[My LinkedIn Profile](www.linkedin.com/in/danielle-rowe1225)
+[My LinkedIn Profile](www.linkedin.com/in/danielle-rowe1225 :))))))
 
 *item 1
 *item 2

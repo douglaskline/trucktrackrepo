@@ -1,7 +1,7 @@
 Robert Rieger
 ===
 
-## Student at UNCW
+Senior at UNCW
 
 [Robert's LinkedIn](www.linkedin.com/in/robertrrieger)
 
