@@ -9,7 +9,7 @@ https://www.linkedin.com/in/billtnguyen/
 * Minor: CyberSecurity
 * Concentration: None
 
-1. New York (edited)
+1. South Carolina (edited)
 2. California
 3. Virginia
 
