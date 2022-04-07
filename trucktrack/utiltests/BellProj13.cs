@@ -23,13 +23,13 @@ namespace utiltests
         {
             // arrange
             
-            double TapTeaLat = 34.22697;
-            double xLong = -77.86989;
-            double yLat = 34.24539;
-            double yLong = -77.95102;
+            double TapTeaLat = 34.23932;
+            double TapTeaLong = -77.86711;
+            double ChopdLat = 34.23542;
+            double ChopdLong = -77.82751;
             // act
-            double expected = 4.802481904079362;
-            double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
+            double expected = 2.28;
+            double actual = DistanceCalculator.EuclideanDistance(TapTeaLat,TapTeaLong,ChopdLat,ChopdLong);
             
             // assert
             double difference = Math.Abs(expected - actual);
