@@ -23,21 +23,21 @@ namespace ui.Controllers
             return View(await _context.locations.ToListAsync());
         }
         
-        public async Task<ActionResult> Details(double? latitude, double? longitude)
+        public async Task<IActionResult> Details(double? latitude, double? longitude)
         {
-          if (latitude == null || longitude == null) 
-          {
-            return NotFound();
-          }
+          // if (latitude == null || longitude == null) 
+          // {
+          //   return NotFound();
+          // }
 
-          var location = await _context.locations
-              .FirstOrDefaultAsync(m => m.longitude == longitude && m.latitude == latitude);
+          // var location = await _context.locations
+          //     .FirstOrDefaultAsync(m => m.longitude == longitude && m.latitude == latitude);
 
-          if(location == null)
-          {
-            return NotFound();
-          }
-          return(View(location));
+          // if(location == null)
+          // {
+          //   return NotFound();
+          // }
+          return(View(await _context.locations.ToListAsync()));
         }
         
     }
