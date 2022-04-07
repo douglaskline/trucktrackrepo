@@ -58,7 +58,28 @@ namespace utiltests
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+    [Fact]
+        public void NSDistanceTestLackey()
+        {
+            // arrange
+            
+            double xLat = 37.08054;
+            double yLat = 34.06821;
 
+            //Walk of Fame to Hollywood Sign 
+
+
+            // act
+            double expected = 70.18;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
         [Fact]
          public void DistanceCalculatorEWDistance()
         {
