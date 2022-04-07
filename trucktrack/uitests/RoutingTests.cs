@@ -20,6 +20,7 @@ namespace uitests
         [InlineData("/")]
         [InlineData("/Home/Index")]
         [InlineData("/truck/Index")]
+        [InlineData("/nearby/Details/70.0/70.0")]
         public async Task EndpointsReturnSuccessAndCorrectType(string url)
         {
             // Arrange
@@ -30,11 +31,10 @@ namespace uitests
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
+            System.Diagnostics.DebuggableAttribute.WriteLine("TEST--------------------");
             Assert.Equal("text/html; charset=utf-8", 
                 response.Content.Headers.ContentType.ToString());
             
-        
-
         }
     }
 }
