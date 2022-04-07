@@ -119,5 +119,25 @@ namespace utiltests
              "expected: " + expected.ToString() + " actual: "+ actual.ToString());
         }
 
+         [Fact]
+        public void NSDistanceTestWatters()
+        {
+            // arrange
+            
+            double xLat = 34.26305291591299;
+            double yLat = 34.26759268197306;
+
+            // act
+            double expected = 0.31;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
+
     }
 }
