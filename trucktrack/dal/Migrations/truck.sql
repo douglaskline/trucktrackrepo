@@ -14,9 +14,9 @@ VALUES
 
 ('Grimm Burger', 'Wilmington', 'NC', 'Fast Food', '$', 'Serving smash burgers, fries, homemade condiments', 'https://grimmburger.com/'), 
 
-('Pepe`s Taco Truck', 'Wilmington', 'NC', 'Mexican', '$', 'Bringing authentic tacos, tortas, quesadillas, and burritos', ''), 
+('Pepe''s Taco Truck', 'Wilmington', 'NC', 'Mexican', '$', 'Bringing authentic tacos, tortas, quesadillas, and burritos', ''), 
 
-('WilmyWoodie', 'Wilmington', 'NC', 'Italian', '$', "The region's first wood-fired pizza oven on wheels", 'https://www.wilmywoodie.com/'), 
+('WilmyWoodie', 'Wilmington', 'NC', 'Italian', '$', 'The region''s first wood-fired pizza oven on wheels', 'https://www.wilmywoodie.com/'), 
 
 ('For The Shell of It', 'Wilmington', 'NC', 'Seafood', '$$', 'Bringing New England to Coastal NC! Lobster-inspired food truck', 'https://shellofit.com/'), 
 
@@ -24,4 +24,4 @@ VALUES
 
 ('Banh Sai', 'Wilmington', 'NC', 'Asian', '$', 'Asian-inspired food truck is rolling through Wilmington', 'https://www.banhsaifoodtruck.com/'), 
 
-('Lane`s Ferry', 'Rocky Point', 'NC', 'Fast Food', '$', 'Hitting the road with its popular burgers', 'http://www.lanesferry.com/new-events-1?view=calendar&month=04-2022'), 
+('Lane''s Ferry', 'Rocky Point', 'NC', 'Fast Food', '$', 'Hitting the road with its popular burgers', 'http://www.lanesferry.com/new-events-1?view=calendar&month=04-2022')
