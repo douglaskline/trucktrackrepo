@@ -1,5 +1,4 @@
 
-
 INSERT INTO Truck (truckName, homecity, homestate, foodstyle, pricerange, tagline, truckURL) 
 
 VALUES
