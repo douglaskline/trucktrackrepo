@@ -1,2 +1,2 @@
 This is Nischal Saladi
-This is MIS 567 course
+This course MIS567 is taught by Dr Kline
