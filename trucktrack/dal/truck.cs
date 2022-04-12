@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace dal
 {
    public class truck
    {
+ 
       public int truckId { get; set; }
       public string truckName { get; set; }
       public string homeCity { get; set; }
