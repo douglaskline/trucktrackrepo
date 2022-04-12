@@ -12,6 +12,7 @@ namespace dal
 
       [DisplayName("Truck Name")]
       public string truckName { get; set; }
+      [DisplayName("City")]
       public string homeCity { get; set; }
       public string homeState { get; set; }
       public string foodStyle { get; set; }
