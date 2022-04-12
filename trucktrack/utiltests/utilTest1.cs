@@ -179,7 +179,7 @@ namespace utiltests
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
-
+          [Fact]
         public void NSDistanceTestBell()
         {
             // arrange
