@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
 
 namespace dal
 {
@@ -8,6 +9,8 @@ namespace dal
    {
  
       public int truckId { get; set; }
+
+      [DisplayName("Truck Name")]
       public string truckName { get; set; }
       public string homeCity { get; set; }
       public string homeState { get; set; }
