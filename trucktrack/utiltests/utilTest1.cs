@@ -184,7 +184,7 @@ namespace utiltests
         {
             // arrange
             
-            double xLat = 34.22697;
+            double xLat = 34.23932;
             double yLat = 34.24539;
 
             // act
