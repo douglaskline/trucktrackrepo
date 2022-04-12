@@ -73,6 +73,7 @@ namespace utiltests
             double expected = 70.18;
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
 
+
             // assert
             double difference = Math.Abs(expected - actual);
 
@@ -80,6 +81,7 @@ namespace utiltests
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+
         [Fact]
          public void DistanceCalculatorEWDistance()
         {
@@ -119,6 +121,88 @@ namespace utiltests
           Xunit.Assert.True (difference <= 0.01,
              "expected: " + expected.ToString() + " actual: "+ actual.ToString());
         }
+                [Fact]
+        public void NSDistanceTestSerfling()
+        {
+            // arrange
+            
+            double xLat = 34.23520;
+            double yLat = 34.20898;
 
+            // 4206 Academy Cove to Papa Johns
+
+            // act
+            double expected = 1.81;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+            double difference = Math.Abs(expected-actual);
+            // assert
+            Xunit.Assert.True (difference <= 0.01,
+             "expected: " + expected.ToString() + " actual: "+ actual.ToString());
+
+
+        }
+[Fact] 
+public void NSDistanceTestAmirHakim()
+        {
+            // arrange
+            
+            double xLat = 42.27307;
+            double yLat = 34.2111;
+
+
+            // act
+            double expected = 556.27593;
+   
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
+
+         [Fact]
+        public void NSDistanceTestWatters()
+        {
+            // arrange
+            
+            double xLat = 34.26305291591299;
+            double yLat = 34.26759268197306;
+
+            // act
+            double expected = 0.31;
+
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
+         [Fact]
+         public void NSDistanceTestInquimboy()
+        {
+            // arrange
+            // Wilmington to Pinehurst
+            
+            double xLat = 34.2108219546097;
+            double yLat = 35.212680293199796;
+
+            // act
+            double expected = 69.13;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
     }
 }
