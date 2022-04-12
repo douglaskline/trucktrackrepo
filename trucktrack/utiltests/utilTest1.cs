@@ -95,11 +95,9 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-<<<<<<< HEAD
+
             Xunit.Assert.True (difference <= 5,
-=======
-            Xunit.Assert.True (difference <= 0.2,
->>>>>>> 2d569504b434f33083100b1cbc58febfe8f50449
+
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
@@ -156,8 +154,13 @@ namespace utiltests
             // act
             double expected = 1.81;
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
+            double difference = Math.Abs(expected-actual);
+            // assert
+            Xunit.Assert.True (difference <= 0.01,
+             "expected: " + expected.ToString() + " actual: "+ actual.ToString());
 
 
+        }
 [Fact] 
 public void NSDistanceTestAmirHakim()
         {
