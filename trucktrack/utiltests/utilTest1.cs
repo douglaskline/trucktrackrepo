@@ -118,7 +118,9 @@ namespace utiltests
           Xunit.Assert.True (difference <= 0.01,
              "expected: " + expected.ToString() + " actual: "+ actual.ToString());
         }
- public void NSDistanceTestAmirHakim()
+
+[Fact] 
+public void NSDistanceTestAmirHakim()
         {
             // arrange
             
