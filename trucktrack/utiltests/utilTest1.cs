@@ -179,5 +179,24 @@ namespace utiltests
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+         public void NSDistanceTestInquimboy()
+        {
+            // arrange
+            // Wilmington to Pinehurst
+            
+            double xLat = 34.2108219546097;
+            double yLat = 35.212680293199796;
+
+            // act
+            double expected = .99814 * 69.0;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
     }
 }
