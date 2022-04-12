@@ -179,6 +179,7 @@ namespace utiltests
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+        [Fact]
         public void NSDistanceTestRowe()
         {
             //Pour Taproom
