@@ -24,6 +24,10 @@ namespace ui.Controllers
             return View(await _context.trucks.ToListAsync());
         }
 
+        public IActionResult Index2(double? latitude, double? longitude)
+        {
+            return View();
+        }
         // GET: truck/Details/5
         public async Task<IActionResult> Details(int? id)
         {

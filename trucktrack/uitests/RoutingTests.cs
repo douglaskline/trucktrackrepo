@@ -21,6 +21,10 @@ namespace uitests
         [InlineData("/Home/Index")]
         [InlineData("/truck/Index")]
         [InlineData("/Nearby/Details/70.0/70.0")]
+        [InlineData("/Home/Index/70.0/70.0")]
+        [InlineData("/Report/DetailWithLatLong/70.0/70.0")]
+        [InlineData("/Truck/Index/70.0/70.0")]
+        [InlineData("/Find/Index/WheelzPizza")]
         public async Task EndpointsReturnSuccessAndCorrectType(string url)
         {
             // Arrange

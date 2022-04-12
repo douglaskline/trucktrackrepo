@@ -18,7 +18,7 @@ namespace ui.Controllers
             _context = context;
         }
 
-        public IActionResult Index ()
+        public IActionResult Index2(string searchTerm)
         {
           return View();
         }
