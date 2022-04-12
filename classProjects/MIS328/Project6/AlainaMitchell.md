@@ -9,7 +9,7 @@
 *item 3
 
 1. item 1
-2. CHANGE
+This is my resolved line of code.
 3. item 3
 
 #110

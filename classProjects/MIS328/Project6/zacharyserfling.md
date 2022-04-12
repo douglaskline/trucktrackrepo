@@ -9,7 +9,7 @@ Zachary Serfling
 2. List 2
 3. List 3
 
-a change
+This is my resolved line of code.
 
 @douglaskline
 
