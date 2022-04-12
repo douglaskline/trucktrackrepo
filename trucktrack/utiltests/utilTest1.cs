@@ -181,3 +181,24 @@ namespace utiltests
         }
     }
 }
+
+
+      public void NSDistanceTestHensley()
+      {
+        // arrange 
+
+        double xLat = 24.547247406217483;
+        double yLat = 34.22282496667014;
+
+        //act
+        double expected = 708;
+            double actual = DistanceCalculator.EuclideanDistance(xLat,yLat);
+
+        //assert
+            double difference = Math.Abs(expected - actual);
+
+          Xunit.Assert.True (difference <= 1.0,
+           "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
+     
+      }
+
