@@ -189,7 +189,7 @@ namespace utiltests
             double yLat = 35.212680293199796;
 
             // act
-            double expected = .9981 * 69.0;
+            double expected = 69.13;
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
 
             // assert
