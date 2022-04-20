@@ -241,7 +241,7 @@ public void NSDistanceTestAmirHakim()
             // assert
             double difference = Math.Abs(expected - actual);
 
-
+        }
   
           [Fact]
         public void NSDistanceTestRowe()
