@@ -60,9 +60,30 @@ namespace utiltests
         }
 
 
+        [Fact]
+        public void NSDistanceTestRobert()
+        {
+            // arrange
+            
+            double xLat = 38.93321;
+            double yLat = 34.74316;
+
+            // act
+            double expected = 289.11;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.01,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+        }
+     
+
 
          [Fact]
         public void NSDistanceTestBordeaux()
+
         {
             // arrange
             
@@ -93,6 +114,8 @@ namespace utiltests
 
 
             // act
+
+
             double expected = 208;
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
 
@@ -120,6 +143,7 @@ namespace utiltests
 
             // act
             double expected = 208;
+
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
 
 

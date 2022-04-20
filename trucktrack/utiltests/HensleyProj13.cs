@@ -34,8 +34,8 @@ namespace utiltests
             // assert
             double difference = Math.Abs(expected - actual);
 
-
           Xunit.Assert.True (difference <= 1.0,
+
 
            "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
           
