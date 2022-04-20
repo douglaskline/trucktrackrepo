@@ -1,0 +1,25 @@
+@model IEnumerable<dal.truck>
+
+@{
+    ViewData["Title"] = "Nearby";
+}
+
+<h1>Nearby Trucks</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.truckName)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                 <a asp-controller="Truck" asp-action="Details" asp-route-id="@item.truckId">@Html.DisplayFor(modelItem => item.truckName)</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
