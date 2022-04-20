@@ -244,5 +244,25 @@ public void NSDistanceTestAmirHakim()
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+          [Fact]
+        public void NSDistanceTestBell()
+        {
+            // arrange
+            
+            double xLat = 34.23932;
+            double yLat = 34.23542;
+
+            // act
+            double expected = .0039 * 69.0;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+            Xunit.Assert.True (difference <= 0.025,
+              "actual: " + actual.ToString() + " expected: " + expected.ToString());
+    
+        }
+
     }
 }
