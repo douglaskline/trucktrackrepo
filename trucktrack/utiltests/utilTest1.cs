@@ -224,6 +224,7 @@ public void NSDistanceTestAmirHakim()
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+
          [Fact]
          public void NSDistanceTestInquimboy()
         {
@@ -240,10 +241,27 @@ public void NSDistanceTestAmirHakim()
             // assert
             double difference = Math.Abs(expected - actual);
 
+        }
+  
+          [Fact]
+        public void NSDistanceTestRowe()
+        {
+            //Pour Taproom
+            double PTLat = 34.23787111250938;
+            double PTLong = 34.23132180570108;
+            // act
+            double expected = 0.4519021;
+            double actual = DistanceCalculator.NSDistance(PTLat,PTLong);
+            
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+
             Xunit.Assert.True (difference <= 0.01,
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+
           [Fact]
         public void NSDistanceTestBell()
         {
@@ -263,6 +281,7 @@ public void NSDistanceTestAmirHakim()
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
+
 
     }
 }
