@@ -59,6 +59,8 @@ namespace utiltests
     
         }
 
+
+
          [Fact]
         public void NSDistanceTestBordeaux()
         {
@@ -79,45 +81,52 @@ namespace utiltests
     
         }
 
- [Fact]
- public void NSDistanceTestMitchell()
+    [Fact]
+        public void NSDistanceTestLackey()
         {
-            // arrange
+        // arrange
             
-            double xLat = 36.487242669524576;
-            double yLat = 34.22617908276649;
+            double xLat = 37.08054;
+            double yLat = 34.06821;
+
+            //Walk of Fame to Hollywood Sign 
+
 
             // act
-            double expected = 2.26106358675808*69.0;
-              double actual = DistanceCalculator.NSDistance(xLat, yLat);
+            double expected = 208;
+            double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
 
             // assert
             double difference = Math.Abs(expected - actual);
 
-            Xunit.Assert.True (difference <= 0.01,
+            Xunit.Assert.True (difference <= 0.5,
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
 
-      [Fact]
-        public void NSDistanceTestNguyen()
+
+ [Fact]
+ public void NSDistanceTestMitchell()
+
         {
             // arrange
             
-            double xLat = 34.22369;
-            double yLat = 34.28423;
+            double xLat = 37.08054;
+            double yLat = 34.06821;
+
+            //Walk of Fame to Hollywood Sign 
+
 
             // act
-            double expected = .0614 * 69.0;
-
+            double expected = 208;
             double actual = DistanceCalculator.NSDistance(xLat, yLat);
+
 
             // assert
             double difference = Math.Abs(expected - actual);
 
-
-            Xunit.Assert.True (difference <= 5,
-
+            Xunit.Assert.True (difference <= 0.5,
               "actual: " + actual.ToString() + " expected: " + expected.ToString());
     
         }
