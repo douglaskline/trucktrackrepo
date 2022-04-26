@@ -331,8 +331,8 @@ public void NSDistanceTestAmirHakim()
             // assert
             double difference = Math.Abs(expected - actual);
 
-          Xunit.Assert.True (difference <= 0.01);
-          
+        Xunit.Assert.True(difference <= 0.00025,
+       "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());          
           
         }
 
