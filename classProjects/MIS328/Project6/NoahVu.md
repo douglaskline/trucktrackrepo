@@ -1,5 +1,6 @@
 # Noah Vu 
 ## Student
+This is my resolved line of code.
 Here is a link to [LinkedIn](https://www.linkedin.com/in/noah-vu-244050150/)
 * UNCW
 * Information Technology
@@ -9,7 +10,7 @@ Here is a link to [LinkedIn](https://www.linkedin.com/in/noah-vu-244050150/)
 3. May 2022
 
 #107
-Toyota
+
 @douglaskline
 
 :smile: :v:
