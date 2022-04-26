@@ -4,7 +4,7 @@ using util;
 
 namespace utiltests
 {
-    public class DupreeProj9
+    public class utilTest1
     {
         [Fact]
         public void DistanceCalculatorConstructorWorks()
