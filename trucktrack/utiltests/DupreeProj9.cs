@@ -315,6 +315,27 @@ public void NSDistanceTestAmirHakim()
     
         }
 
+        [Fact]
+         public void JamesDupreeDistanceCalculator()
+        {
+            // arrange
+            
+            double xLat = 34.22497090039899;
+            double xLong = -77.8257258176798;
+            double yLat = 34.242835017171124;
+            double yLong = -77.83275844281201;
+            // act
+            double expected = 1.29;
+            double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
+            
+            // assert
+            double difference = Math.Abs(expected - actual);
+
+        Xunit.Assert.True(difference <= 0.00025,
+       "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());          
+          
+        }
+
 
     }
 }
