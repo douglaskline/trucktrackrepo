@@ -335,6 +335,7 @@ public void NSDistanceTestAmirHakim()
        "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());          
           
         }
+        [Fact]
         public void NSDistanceTestVu()
         {
             // arrange
