@@ -23,7 +23,7 @@ namespace ui.Controllers
             return View();
         }
 
-        public IActionResult FindTruck(double? latitude, double? longitude)
+        public IActionResult Find(double? latitude, double? longitude)
         {
             return View();
         }
