@@ -9,7 +9,11 @@ Here is a link to [LinkedIn](https://www.linkedin.com/in/noah-vu-244050150/)
 3. May 2022
 
 #107
+
 Tacoma
+
+Honda
+
 @douglaskline
 
 :smile: :v:
