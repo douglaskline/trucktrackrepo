@@ -18,7 +18,7 @@ namespace ui.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(double? latitude, double? longitude)
         {
             return View();
         }

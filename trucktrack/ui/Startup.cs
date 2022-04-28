@@ -66,8 +66,18 @@ namespace ui
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+                    pattern: "{controller=Home}/{action=Index}/{lat?}/{long?}");
+
+                // endpoints.MapControllerRoute(   
+                //     name: "Nearby",
+                //     pattern: "{controller=Nearby}/{action=Index}/");
+                  
+                // endpoints.MapControllerRoute(   
+                //     name: "Find",
+                //     pattern: "{controller=Find}/{action=Index}/{searchTerm?}");        
+              
+              //
+            }); 
         }
     }
 }

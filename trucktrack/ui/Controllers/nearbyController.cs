@@ -18,10 +18,29 @@ namespace ui.Controllers
             _context = context;
         }
 
-        // GET: truck
-        public async Task<IActionResult> Index()
+
+          public async Task<IActionResult> Index()
         {
-            return View(await _context.trucks.ToListAsync());
-        }       
-}
+            return View(await _context.locations.ToListAsync());
+        }
+        
+        public async Task<IActionResult> Details(double? latitude, double? longitude)
+        {
+          // if (latitude == null || longitude == null) 
+          // {
+          //   return NotFound();
+          // }
+
+          // var location = await _context.locations
+          //     .FirstOrDefaultAsync(m => m.longitude == longitude && m.latitude == latitude);
+
+          // if(location == null)
+          // {
+          //   return NotFound();
+          // }
+          return(View(await _context.locations.ToListAsync()));
+        }
+        
+    }
+
 }
