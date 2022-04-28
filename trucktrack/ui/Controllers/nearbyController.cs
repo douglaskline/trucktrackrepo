@@ -18,6 +18,7 @@ namespace ui.Controllers
             _context = context;
         }
 
+
           public async Task<IActionResult> Index()
         {
             return View(await _context.locations.ToListAsync());
@@ -41,4 +42,5 @@ namespace ui.Controllers
         }
         
     }
+
 }
