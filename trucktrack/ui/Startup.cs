@@ -65,8 +65,14 @@ namespace ui
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "truckdetail",
+                    pattern:"Home/Truck/{id?}/{lat?}/{long?}",
+                    defaults: new {controller="Home", action="Truck"} );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{lat?}/{long?}");
+
 
                 // endpoints.MapControllerRoute(   
                 //     name: "Nearby",

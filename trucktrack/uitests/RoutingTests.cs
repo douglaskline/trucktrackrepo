@@ -18,13 +18,12 @@ namespace uitests
 
         [Theory]
         [InlineData("/")]
-        [InlineData("/Home/Index")]
-        [InlineData("/truck/Index")]
-        [InlineData("/Nearby/Details/70.0/70.0")]
-        [InlineData("/Home/Index/70.0/70.0")]
-        [InlineData("/Report/DetailWithLatLong/70.0/70.0")]
-        [InlineData("/Truck/Index/70.0/70.0")]
-        [InlineData("/Find/Index/WheelzPizza")]
+        [InlineData("/Home/")]
+        [InlineData("/Home/Nearby/70.0/70.0")]
+        [InlineData("/Home/Truck/3/70.0/70.0")]
+        [InlineData("/Home/Report/70.0/70.0")]
+        [InlineData("/Home/FindTruck/70.0/70.0")]
+
         public async Task EndpointsReturnSuccessAndCorrectType(string url)
         {
             // Arrange
