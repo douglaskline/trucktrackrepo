@@ -28,7 +28,7 @@ namespace utiltests
             double RomeLat = 41.903848184672505;
             double RomeLong = 12.49912753921051;
             // act
-            double expected = 4281.92;
+            double expected = 4281.915095793622;
             double actual = DistanceCalculator.EuclideanDistance(NewYorkLat, NewYorkLong, RomeLat, RomeLong);
 
             //Console.WriteLine("actual: " + actual.ToString());
