@@ -40,6 +40,30 @@ namespace utiltests
         }
 
         [Fact]
+         public void DistanceCalculatorJonathanSturdivant()
+        {
+            // arrange
+            
+            // loc1 35.65973855960231, 139.7005223689997
+            // loc2 34.22409575772562, -77.86958214452329
+            double xLat = 35.65973855960231;
+            double xLong = 139.7005223689997;
+            double yLat = 34.24539;
+            double yLong = -77.95102;
+            // act
+            double expected = 7034.13;
+            double actual = DistanceCalculator.EuclideanDistance(xLat,xLong,yLat,yLong);
+            
+            // assert
+
+            double difference = Math.Abs(expected - actual);
+
+          Xunit.Assert.True(difference <= 0.01,
+       "actual: " + actual.ToString() + " expected: " + expected.ToString() + " diff: " + difference.ToString());
+                    
+        }
+
+        [Fact]
         public void NSDistanceTest()
         {
             // arrange
