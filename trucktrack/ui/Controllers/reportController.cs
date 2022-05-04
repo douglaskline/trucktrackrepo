@@ -25,6 +25,10 @@ namespace ui.Controllers
             return View(await trucktrackContext.ToListAsync());
         }
 
+        public async Task<IActionResult> DetailWithLatLong(double? latitude, double? longitude)
+        {
+          return(View(await _context.reports.ToListAsync()));
+        }
         // GET: report/Details/5
         public async Task<IActionResult> Details(int? id)
         {

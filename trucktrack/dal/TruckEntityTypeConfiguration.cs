@@ -22,37 +22,47 @@ namespace dal
             .Property(t => t.truckName)
             .HasColumnType("VARCHAR")
             .HasMaxLength(200)
-            .IsRequired();
+            .IsRequired()
+            .HasAnnotation("DisplayName", "Truck Name");
 
          builder
             .Property(t => t.homeCity)
             .HasColumnType("VARCHAR")
-            .HasMaxLength(75);
+            .HasMaxLength(75)
+            .HasAnnotation("DisplayName", "Home City");
 
          builder
             .Property(t => t.homeState)
             .HasColumnType("CHAR")
-            .HasMaxLength(2);
+            .HasMaxLength(2)
+            .HasAnnotation("DisplayName", "Home State");
 
          builder
             .Property(t => t.foodStyle)
             .HasColumnType("VARCHAR")
-            .HasMaxLength(75);
+            .HasMaxLength(75)
+            .HasAnnotation("DisplayName", "Food Style");
 
          builder
             .Property(t => t.priceRange)
             .HasColumnType("VARCHAR")
-            .HasMaxLength(10);
+            .HasMaxLength(10)
+            .HasAnnotation("DisplayName", "Price Range");
+
 
          builder
             .Property(t => t.tagLine)
             .HasColumnType("VARCHAR")
-            .HasMaxLength(200);
+            .HasMaxLength(200)
+            .HasAnnotation("DisplayName", "Tag Line");
+
 
          builder
             .Property(t => t.truckURL)
             .HasColumnType("VARCHAR")
-            .HasMaxLength(300);
+            .HasMaxLength(300)
+            .HasAnnotation("DisplayName", "Truck URL");
+
 
          builder.Property(t => t.timeStamp).IsRowVersion();
 

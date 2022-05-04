@@ -18,7 +18,27 @@ namespace ui.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(double? latitude, double? longitude)
+        {
+            return View();
+        }
+
+        public IActionResult Find(double? latitude, double? longitude)
+        {
+            return View();
+        }
+
+        public IActionResult Nearby(double? latitude, double? longitude)
+        {
+            return View();
+        }
+
+        public IActionResult Report(double? latitude, double? longitude)
+        {
+            return View();
+        }
+
+        public IActionResult Truck(int? id, double? latitude, double? longitude)
         {
             return View();
         }

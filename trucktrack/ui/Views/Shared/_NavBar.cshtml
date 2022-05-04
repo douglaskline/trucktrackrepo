@@ -1,0 +1,21 @@
+
+  <!-- Nav tabs -->
+@{
+    string nearbyTabClassStr = "nav-link " + ViewData["NearbyTabState"];
+    string reportTabClassStr = "nav-link " + ViewData["ReportTabState"];
+    string findTabClassStr = "nav-link " + ViewData["FindTabState"];
+
+}
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li class="nav-item">
+      <a class="@nearbyTabClassStr"  asp-controller="Home" asp-action="Nearby">Nearby</a>
+    </li>
+    <li class="nav-item">
+      <a class="@reportTabClassStr"  asp-controller="Home" asp-action="Report">Report</a>
+    </li>
+    <li class="nav-item">
+      <a class="@findTabClassStr"  asp-controller="Home" asp-action="Find">Find</a>
+    </li>
+  </ul>
+
+

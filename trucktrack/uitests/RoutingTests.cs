@@ -18,8 +18,11 @@ namespace uitests
 
         [Theory]
         [InlineData("/")]
-        [InlineData("/Home/Index")]
-        [InlineData("/truck/Index")]
+        [InlineData("/Home/")]
+        [InlineData("/Home/Nearby/70.0/70.0")]
+        [InlineData("/Home/Truck/3/70.0/70.0")]
+        [InlineData("/Home/Report/70.0/70.0")]
+        [InlineData("/Home/Find/70.0/70.0")]
         public async Task EndpointsReturnSuccessAndCorrectType(string url)
         {
             // Arrange
@@ -33,8 +36,6 @@ namespace uitests
             Assert.Equal("text/html; charset=utf-8", 
                 response.Content.Headers.ContentType.ToString());
             
-        
-
         }
     }
 }
