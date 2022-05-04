@@ -39,17 +39,17 @@ namespace uitests
             
         }
         [Theory]
-        [InlineData("Home/Report/")]
+        [InlineData("/Home/Report/")]
         public async Task EndPointsProperlyReturnNotFound(string url)
         {
             var client = _factory.CreateClient();
 
             // Act
             var response = await client.GetAsync(url);
-            var actual = response.StatusCode;
-            var expected = HttpStatusCode.NotFound;
+            var actualStatus = response.StatusCode;
+            var expectedStatus = HttpStatusCode.OK;
             //Assert
-            Assert.Equal(actual,expected);
+            Assert.Equal(actualStatus,expectedStatus);
             
         }
     }

@@ -37,11 +37,15 @@ namespace ui.Controllers
         
         // GET: home/Report/45.0/45.0
 
+        public IActionResult GetLocation()
+        {
+            return View();
+        }
         public  async Task<IActionResult> Report(double? latitude, double? longitude)
         {
             if (latitude == null | longitude == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(GetLocation));;
             }
 
             return View();
