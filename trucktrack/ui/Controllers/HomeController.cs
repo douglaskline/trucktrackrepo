@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+
 using ui.Models;
 
 namespace ui.Controllers
@@ -32,9 +34,16 @@ namespace ui.Controllers
         {
             return View();
         }
+        
+        // GET: home/Report/45.0/45.0
 
-        public IActionResult Report(double? latitude, double? longitude)
+        public  async Task<IActionResult> Report(double? latitude, double? longitude)
         {
+            if (latitude == null | longitude == null)
+            {
+                return NotFound();
+            }
+
             return View();
         }
 
