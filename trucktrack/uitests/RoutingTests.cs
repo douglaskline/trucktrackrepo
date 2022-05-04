@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
+using System.Net;
 
 namespace uitests
 {
@@ -35,6 +36,20 @@ namespace uitests
             response.EnsureSuccessStatusCode(); // Status Code 200-299
             Assert.Equal("text/html; charset=utf-8", 
                 response.Content.Headers.ContentType.ToString());
+            
+        }
+        [Theory]
+        [InlineData("Home/Report/")]
+        public async Task EndPointsProperlyReturnNotFound(string url)
+        {
+            var client = _factory.CreateClient();
+
+            // Act
+            var response = await client.GetAsync(url);
+            var actual = response.StatusCode;
+            var expected = HttpStatusCode.NotFound;
+            //Assert
+            Assert.Equal(actual,expected);
             
         }
     }
