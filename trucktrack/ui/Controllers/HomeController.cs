@@ -65,6 +65,9 @@ namespace ui.Controllers
                 model.locations.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem(l.locationName,l.locationId.ToString()));
             }
 
+            
+
+
             return View(model);
         }
 
