@@ -65,10 +65,27 @@ namespace ui.Controllers
                 model.locations.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem(l.locationName,l.locationId.ToString()));
             }
 
-            
-
-
             return View(model);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Report([BindAttribute("truckId, locationId, minutesLonger")] reportViewModel rvm)
+        {
+            if (ModelState.IsValid)
+            {
+                dal.report r = new report();
+                r.locationId = rvm.locationId;
+                r.truckId = rvm.truckId;
+                r.startTime = DateTime.Now;
+                r.endTime = r.startTime.AddMinutes(rvm.minutesLonger);
+                r.reportTime = r.startTime;
+                
+                _context.reports.Add(r);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Nearby));
+            }
+            return View(rvm);
+            
         }
 
         public IActionResult Truck(int? id, double? latitude, double? longitude)
