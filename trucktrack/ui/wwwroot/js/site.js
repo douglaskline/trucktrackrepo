@@ -2,17 +2,24 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-function showPosition(position)
+function gotPositionHandler(position)
 {
    alert("Callback completed");
-   alert("Lat:" + position.coords.latitude + " Long: "+ position.coords.longitude);
+   alert("url:" + $(this).attr('href') + " Lat:" + position.coords.latitude + " Long: "+ position.coords.longitude);
 }
 
-function getLocation(){
+function errPositionHandler(position)
+{
+
+}
+
+function getLocation(anchorHRef){
+   alert(anchorHRef);
    if (navigator.geolocation)
    {
       alert("getLocation function call worked")
-      navigator.geolocation.getCurrentPosition(showPosition);
+      navigator.geolocation.getCurrentPosition(function() {}, function () {}, {});
+      navigator.geolocation.getCurrentPosition(gotPositionHandler, errPositionHandler, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
    }
    else
    {
