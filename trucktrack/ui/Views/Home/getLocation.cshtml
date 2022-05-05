@@ -1,5 +1,7 @@
 @{
     ViewData["Title"] = "Get Location";
 }
-<h1>@ViewData["Title"]</h1>
-<a href="#" onclick="displayMessage()">click here</a>
+<h1>May we have your location?</h1>
+<p>With your location, we will be able to tell you which foodtrucks are nearby.</p>
+<p>We won't share location or use it for purposes other than to provide you useful information.</p>
+<a href="/Home/getLocation/" onclick="getLocation()">click here</a>

@@ -2,7 +2,20 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+function showPosition(position)
+{
+   alert("Callback completed");
+   alert("Lat:" + position.coords.latitude + " Long: "+ position.coords.longitude);
+}
 
-function displayMessage(){
-   alert("Here is a message!");
+function getLocation(){
+   if (navigator.geolocation)
+   {
+      alert("getLocation function call worked")
+      navigator.geolocation.getCurrentPosition(showPosition);
+   }
+   else
+   {
+      alert("Geolocation is not supported by your browser.");
+   }
 }
