@@ -13,10 +13,10 @@
 <H1>Report View</H1>
 
 <form asp-action="Report" asp-controller="home" method="post">  
-   <select id="truck" name="truck">
-       <option value="7">Poor Piggy's</option>
-   </select> 
    <select asp-for="truckId" asp-items="Model.trucks">
+   </select>
+   <select asp-for="locationId" asp-items="Model.locations">
+       
    </select>
    <input type="submit" name="btnSubmit" value="Submit" class="btn btn-success" />  
 </form>
