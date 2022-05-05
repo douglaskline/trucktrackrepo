@@ -66,12 +66,12 @@ namespace ui
             {
                 endpoints.MapControllerRoute(
                     name: "truckdetail",
-                    pattern:"Home/Truck/{id?}/{lat?}/{long?}",
+                    pattern:"Home/Truck/{id?}/{latitude?}/{longitude?}",
                     defaults: new {controller="Home", action="Truck"} );
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{lat?}/{long?}");
+                    pattern: "{controller=Home}/{action=Index}/{latitude?}/{longitude?}");
 
 
                 // endpoints.MapControllerRoute(   
