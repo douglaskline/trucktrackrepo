@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using dal;
 
 using ui.Models;
 
@@ -13,11 +14,14 @@ namespace ui.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly trucktrackContext _context;
+
+
+
+        public HomeController(trucktrackContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index(double? latitude, double? longitude)
@@ -47,8 +51,21 @@ namespace ui.Controllers
             {
                 return RedirectToAction(nameof(GetLocation));;
             }
+            
+            
+            var model = new reportViewModel();
 
-            return View();
+            List<truck> trucks =  await _context.trucks.ToListAsync();
+            foreach (truck t in trucks){
+                model.trucks.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem(t.truckName,t.truckId.ToString()));
+            }
+            List<location> locations = await _context.locations.ToListAsync();
+            model.locations.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem("unknown","-1"));
+            foreach (location l in locations){
+                model.locations.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem(l.locationName,l.locationId.ToString()));
+            }
+
+            return View(model);
         }
 
         public IActionResult Truck(int? id, double? latitude, double? longitude)

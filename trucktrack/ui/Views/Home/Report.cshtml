@@ -1,9 +1,23 @@
+@model dal.reportViewModel
+
 @{
+    
     ViewData["Title"] = "Report a Truck";
     
     ViewData["NearbyTabState"] = "";
     ViewData["ReportTabState"] = "active";
     ViewData["FindTabState"] = "";
+
 }
 
 <H1>Report View</H1>
+
+<form asp-action="Report" asp-controller="home" method="post">  
+   <select id="truck" name="truck">
+       <option value="7">Poor Piggy's</option>
+   </select> 
+   <select asp-for="truckId" asp-items="Model.trucks">
+   </select>
+   <input type="submit" name="btnSubmit" value="Submit" class="btn btn-success" />  
+</form>
+
